@@ -1,0 +1,27 @@
+{
+  "posts": [
+    {
+      "id": 23423432,
+      "title": "Hello world",
+      "keywords": ["test", "javascript"],
+      "imageUrl": "https://picsum.photos/500",
+      "content": "Lorem ipsum dolor sit amet",
+      "createdAt": "null",
+      "author": "User1"
+    }
+  ],
+  "errors": [
+    {
+      "status": 404,
+      "message": "The item does not exist!"
+    },
+    {
+      "status": 422,
+      "message": "The provided data were invalid.",
+      "fields": {
+        "title": "Title needs to be more than 10 chars long.",
+        "imageUrl": "Image url is required!"
+      }
+    }
+  ]
+}

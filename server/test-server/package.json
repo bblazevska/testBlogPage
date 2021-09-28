@@ -1,0 +1,19 @@
+{
+  "name": "js-test",
+  "version": "1.0.0",
+  "description": "Javascript Excercize",
+  "main": "index.js",
+  "dependencies": {
+    "json-server": "^0.16.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "json-server db.json"
+  },
+  "keywords": [
+    "js",
+    "test"
+  ],
+  "author": "ATIS",
+  "license": "MIT"
+}
