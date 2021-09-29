@@ -5,9 +5,16 @@
       "title": "Hello world",
       "keywords": ["test", "javascript"],
       "imageUrl": "https://picsum.photos/500",
-      "content": "Lorem ipsum dolor sit amet",
-      "createdAt": "null",
-      "author": "User1"
+      "description": "Lorem ipsum dolor sit amet",
+      "content": "",
+      "date": "null",
+      "author": "User1",
+      "recipe": {
+        "recipe-title": "",
+        "ingredients": [],
+        "toppings": []
+        
+      }
     }
   ],
   "errors": [
