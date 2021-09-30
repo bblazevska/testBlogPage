@@ -1,0 +1,32 @@
+.post{
+   width: fit-content;
+   padding-top: 1rem;
+
+   &__image-box{
+      width: 20rem;
+      height: 40rem;
+      margin-bottom: 3rem;
+   }
+   &__img{
+      max-height: 30rem;
+      // max-width: 30rem;
+   }
+   &__description{
+      // display: inline-block;
+      text-align: center;
+      margin: 1.5rem 0;
+   }
+
+   &__date{
+      font-style: italic;
+      font-size: 1.4rem;
+      font-weight: 300;
+      color: $color-text-light;
+   }
+
+   &__title{
+      font-weight: 300;
+      font-size: 2.8rem;
+      margin-bottom: 2rem;
+   }
+}

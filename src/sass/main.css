@@ -23,6 +23,89 @@ body {
   margin: 0 auto;
 }
 
+.header {
+  margin-bottom: 5rem;
+}
+
+.section-posts {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  max-width: 145rem;
+  margin: 0 auto;
+  padding: 2rem;
+  row-gap: 4rem;
+  -webkit-column-gap: 25rem;
+          column-gap: 25rem;
+}
+
+.btn {
+  background-color: #fff;
+  outline: none;
+  padding: 1.5rem;
+  text-transform: uppercase;
+  border: none;
+}
+
+.btn__post {
+  color: #616063;
+  border: 1px solid #f5f1ef;
+  border-radius: 2px;
+}
+
+.post {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-top: 1rem;
+}
+
+.post__image-box {
+  width: 20rem;
+  height: 40rem;
+  margin-bottom: 3rem;
+}
+
+.post__img {
+  max-height: 30rem;
+}
+
+.post__description {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.post__date {
+  font-style: italic;
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #616063;
+}
+
+.post__title {
+  font-weight: 300;
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+}
+
+.pagination {
+  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
 .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -56,22 +139,22 @@ body {
   transition: all 0.2s;
   position: relative;
   text-decoration: none;
-  color: #212123;
-}
-
-.navigation__link:hover {
   color: #616063;
 }
 
+.navigation__link:hover {
+  color: #212123;
+}
+
 .navigation__link:hover::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
   width: 50%;
-  height: .2rem;
+  height: 0.2rem;
   background-color: #a0583c;
 }
 
@@ -100,7 +183,11 @@ body {
 .navigation__icon {
   width: 2.5rem;
   height: 2.5rem;
-  fill: #212123;
+  fill: #616063;
+}
+
+.navigation__icon:hover {
+  fill: #a0583c;
 }
 
 .socials {

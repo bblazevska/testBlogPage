@@ -1,74 +1,76 @@
 .navigation {
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   padding-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1.5rem;
 
-   &__list{
-      list-style: none;
-      display: flex;
-      
-      &--item{
-         font-size: 2.6rem;
-      }
-      &--item:not(:last-child){
-         margin-right: 5rem;
-      }
-      
-   }
+  &__list {
+    list-style: none;
+    display: flex;
 
-   &__link:link,
-   &__link:visited{
-      transition: all 0.2s;
-      position: relative;
-      text-decoration: none;
-      color: $color-text-dark;
-   }
-   &__link:hover{
-      color: $color-text-light;
+    &--item {
+      font-size: 2.6rem;
+    }
+    &--item:not(:last-child) {
+      margin-right: 5rem;
+    }
+  }
 
-      &::after{
-         content: '';
-         position: absolute;
-         bottom: 0;
-         left: 50%;
-         transform: translate(-50%);
-         width: 50%;
-         height: .2rem;
-         background-color: $color-primary;
-         
-      }
-   }
+  &__link:link,
+  &__link:visited {
+    transition: all 0.2s;
+    position: relative;
+    text-decoration: none;
+    color: $color-text-light;
+  }
+  &__link:hover {
+    color: $color-text-dark;
 
-   &__link--active{
-      border-bottom: 3px solid $color-primary;
-      transition: border-bottom 0.2s;
-   }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%);
+      width: 50%;
+      height: 0.2rem;
+      background-color: $color-primary;
+    }
+  }
+
+  &__link--active {
+    border-bottom: 3px solid $color-primary;
+    transition: border-bottom 0.2s;
+  }
   &__logo {
     width: auto;
     height: 6rem;
     margin-left: 3rem;
   }
-  &__icon-box{
-     display: flex;
-     align-items: center;
-     gap: 3rem;
+  &__icon-box {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
   }
 
-  &__icon{
-     width: 2.5rem;
-     height: 2.5rem;
-     fill: $color-text-dark;
+  &__icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    fill: $color-text-light;
+
+    &:hover{
+       fill: $color-primary
+    }
   }
 }
 
-.socials{
-   display: flex;
-   gap: 2rem;
+.socials {
+  display: flex;
+  gap: 2rem;
 }
 
-.btn-search{
-   background-color: transparent;
-   border: none;
-   cursor: pointer;
+.btn-search {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }

@@ -1,0 +1,13 @@
+.btn{
+   background-color: #fff;
+   outline: none;
+   padding: 1.5rem;
+   text-transform: uppercase;
+   border: none;
+
+   &__post{
+      color: $color-text-light;
+      border: 1px solid $color-light; 
+      border-radius: 2px;
+   }
+}

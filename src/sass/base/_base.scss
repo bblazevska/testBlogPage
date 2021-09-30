@@ -20,4 +20,19 @@ body{
 .container{
    max-width: 145rem;
    margin: 0 auto;
+   
+}
+
+.header{
+   margin-bottom: 5rem;
+}
+.section-posts{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   justify-items: center;
+   max-width: 145rem;
+   margin: 0 auto;
+   padding: 2rem;
+   row-gap: 4rem;
+   column-gap: 25rem;
 }
