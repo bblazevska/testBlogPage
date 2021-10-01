@@ -1,0 +1,39 @@
+.newsletter{
+   &__icon{
+      width: 3.5rem;
+      height: 3.5rem;
+      stroke: $color-text-light;
+   }
+   &__input{
+      border: none;
+      width: 90%;
+      margin: 0 auto;
+      border-bottom: 1px solid #E8E8E8;
+      padding: 1rem;
+      font-size: 1.8rem;
+      font-weight: 200;
+      color: #a3a3a3;
+
+      &:focus{
+         outline: none;
+         color: $color-text-light;
+      }
+      
+   }
+   &__mail-box{
+      display: flex;
+      position: relative;
+   }
+
+   &__btn{
+      width: 4rem;
+      height: 4rem;
+      font-size: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      right: 5rem;
+      bottom: 1px;
+   }
+}

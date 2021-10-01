@@ -1,10 +1,55 @@
 .pagination{
    display: inline-block;
    display: flex;
-   gap: 3rem;
+   gap: 4rem;
    align-items: center;
    justify-content: center;
    max-width: 50rem;
    margin: 0 auto;
+   font-size: 1.4rem;
+   margin-bottom: 10rem;
 
+   &__number,
+   &__number:link,
+   &__number:visited{
+      text-decoration: none;
+      color: $color-text-dark;
+      width: 2.5rem;
+      height: 2.5rem;
+      text-align: center;
+   }
+   &__number:hover{
+      border-radius: 50%;
+      background-color: $color-primary-light;
+      color: #fff;
+      padding: 1rem;
+      
+   }
+
+   &__dots{
+      font-size: 1.8rem;
+   }
+
+   &__btn{
+      border: none;
+      width: 4rem;
+      height: 4rem;
+      background-color: #fff;
+      border-radius: 50%;
+      stroke: $color-primary-light;
+
+   }
+   &__btn,
+   &__number{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+   }
+   &__icon{
+      width: 2rem;
+      height: 2rem;
+      color: $color-primary-light;
+      box-shadow: 0 1.2rem 2.4rem rgba(0,0,0,0.02);
+   }
 }
