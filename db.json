@@ -3,7 +3,7 @@
     {
       "id": 23423432,
       "title": "Hello world",
-      "keywords": ["test", "javascript"],
+      "category": ["test", "javascript"],
       "imageUrl": "https://picsum.photos/500",
       "description": "Lorem ipsum dolor sit amet",
       "content": "",

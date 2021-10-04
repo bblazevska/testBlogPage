@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+   <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" href="./src/sass/main.css">
+
+   <script defer src="./src/js/main.js"></script>
+   <title>Create Post | Foody</title>
+</head>
+
+<body>
+   <div class="container">
+      <header class="header">
+         <nav class="navigation">
+            <div class="navigation__logo-box">
+               <a href="#" class="navigation__logo--link">
+                  <img src="./src/img/foody-logo.png" alt="Foody logo" class="navigation__logo">
+               </a>
+            </div>
+            <ul class="navigation__list">
+               <li class="navigation__list--item">
+                  <a href="main.html" class="navigation__link">Home</a>
+               </li>
+               <li class="navigation__list--item">
+                  <a href="recipesPage.html" class="navigation__link">Recipes</a>
+               </li>
+               <li class="navigation__list--item">
+                  <a href="about.html" class="navigation__link">About</a>
+               </li>
+            </ul>
+
+            <div class="navigation__icon-box">
+               <button class="btn-search">
+                  <ion-icon name="search-outline" class="navigation__icon"></ion-icon>
+               </button>
+               <div class="socials">
+                  <a href="#" class="socials__link">
+                     <ion-icon name="logo-facebook" class="navigation__icon"></ion-icon>
+                  </a>
+                  <a href="#" class="socials__link">
+                     <ion-icon name="logo-instagram" class="navigation__icon"></ion-icon>
+                  </a>
+                  <a href="#" class="socials__link">
+                     <ion-icon name="logo-twitter" class="navigation__icon"></ion-icon>
+                  </a>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <main class="new-post">
+         <h2 class="heading-secondary heading-center">Create New Post</h2>
+         <div class="new-post-container">
+            <div class="new-post-container__post">
+
+               <div class="new-post__field">
+                  <label for="title" class="new-post__field--label">Post Title</label>
+                  <input type="text" class="new-post__field--input" maxlength="100" placeholder="Title">
+               </div>
+               <div class="new-post__field">
+                  <label for="title" class="new-post__field--label">Category</label>
+                  <select name="category_name" class="new-post__field--select">
+                     <option value="">Choose category</option>
+                     <option id="" value="breakfast">Breakfast</option>
+                     <option id="" value="dinner">Dinner</option>
+                     <option id="" value="desert">Desert</option>
+                     <option id="" value="salad">Salad</option>
+                     <option id="" value="savory">Savory</option>
+                     <option id="" value="snacks">Snacks</option>
+                  </select>
+               </div>
+               
+               <div class="new-post__field">
+                  <label for="desc" class="new-post__field--label">Short description</label>
+                  <input type="text" name="desc" class="new-post__field--input" maxlength="200" placeholder="Write short description">
+               </div>
+               <div class="new-post__field">
+                  <label for="content" class="new-post__field--label">Content</label>
+                  <textarea name="content" id="content" cols="30" rows="10"></textarea>
+               </div>
+            </div>
+
+            <div class="new-post-container__recipe">
+               <div class="new-post__field">
+                  
+                  <label for="recipe-title" class="new-post__field--label">Recipe Title</label>
+                  <input type="text" name="recipe-title" class="new-post__field--input" maxlength="100" placeholder="Recipe Title">
+               </div>
+               <div class="new-post__field">
+                  <label for="title" class="new-post__field--label">Ingredients</label>
+                  <input type="text" name="title" class="new-post__field--input" maxlength="100" placeholder="">
+               </div>
+               <div class="new-post__field">
+                  <label for="instructions" class="new-post__field--label">Instructions</label>
+                  <textarea name="instructions" id="content" cols="30" rows="10"></textarea>
+               </div>
+            </div>
+         </div>
+      </main>
+   </div>
+   <!-- <footer class="footer">
+      <span class="footer__text">&copy; &nbsp; Foody &nbsp; 2021</span>
+   </footer> -->
+
+   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

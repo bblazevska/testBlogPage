@@ -1,0 +1,32 @@
+.recipes__text {
+  width: 80%;
+  margin: $section-margin auto;
+  // margin-bottom: $section-margin;
+
+  &--content{
+    font-size: 2.2rem;
+    width: 50%;
+    font-weight: 300;
+    margin-bottom: 3rem;
+  }
+}
+
+.filter-recipes{
+  &__select{
+    width: 20rem;
+    height: 2.5rem;
+    border: 1px solid $color-text-light;
+    margin-right: 2rem;
+    color: $color-text-light;
+  }
+  &__input{
+    height: 2.5rem;
+    width: 20rem;
+    border: 1px solid $color-text-light;
+    padding: 1rem;
+
+    &:focus{
+      outline: none;
+    }
+  }
+}

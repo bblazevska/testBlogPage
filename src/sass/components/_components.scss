@@ -3,6 +3,7 @@
       width: 3.5rem;
       height: 3.5rem;
       stroke: $color-text-light;
+      margin-bottom: 1rem;
    }
    &__input{
       border: none;
@@ -13,6 +14,7 @@
       font-size: 1.8rem;
       font-weight: 200;
       color: #a3a3a3;
+      margin-top: 1rem;
 
       &:focus{
          outline: none;

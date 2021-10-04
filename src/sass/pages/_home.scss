@@ -1,12 +1,10 @@
-.header {
-  margin-bottom: 10rem;
-}
+
 .hero-container {
   background: linear-gradient(to left, rgba(204, 185, 177,0.3), rgba(33, 33, 35,0.8)),
     url("https://ourfoodstories.com/wp-content/uploads/2021/08/Ruffino-Gathering-15-2048x1365.jpg");
   height: 75vh;
   position: relative;
-  margin-bottom: 5rem;
+  margin-bottom: $section-margin;
   
   
   &__text{
@@ -32,21 +30,22 @@
    row-gap: 6rem;
    column-gap: 8rem;
    margin-top: 3rem;
-   margin-bottom: 5rem;
+   margin-bottom: $section-margin;
   
 }
 .section-intro{
    text-align: center;
-   margin-bottom: 10rem;
+   margin-bottom: $section-margin;
 }
 .section-promo{
    margin: 0 auto;
-   margin-bottom: 15rem;
+   margin-bottom: $section-margin;
 }
 .section-newsletter{
    max-width: 90rem;
-   margin: 0 auto;
    text-align: center;
+   margin: $section-margin auto;
+   margin-bottom: 15rem;
 }
 .white-space{
    height: 50rem;

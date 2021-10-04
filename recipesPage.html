@@ -8,16 +8,13 @@
 
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <!-- <link
-      href="https://fonts.googleapis.com/css2?family=Overlock:wght@400;700&family=Roboto+Mono:wght@300;400;500;700&display=swap"
-      rel="stylesheet"> -->
 
    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;600;700&display=swap" rel="stylesheet">
 
    <link rel="stylesheet" href="./src/sass/main.css">
-   <!-- <link rel="shortcut icon" href="./src/img/icon.png" type="image/png"> -->
+   
    <script defer src="./src/js/main.js"></script>
-   <title>Foody</title>
+   <title>Recipes | Foody</title>
 </head>
 
 <body>
@@ -25,10 +22,8 @@
       <header class="header">
          <nav class="navigation">
             <div class="navigation__logo-box">
-               <a href="main.html" class="navigation__logo--link">
+               <a href="#" class="navigation__logo--link">
                   <img src="./src/img/foody-logo.png" alt="Foody logo" class="navigation__logo">
-                  <!-- <img src="./src/img/foody-logo2.png" alt="Foody logo" class="navigation__logo"> -->
-                  <!-- <img src="./src/img/logo.jpg" alt="Foody logo"> -->
                </a>
             </div>
             <ul class="navigation__list">
@@ -38,16 +33,12 @@
                <li class="navigation__list--item">
                   <a href="recipesPage.html" class="navigation__link">Recipes</a>
                </li>
-      
                <li class="navigation__list--item">
-                  <a href="#" class="navigation__link">About</a>
+                  <a href="about.html" class="navigation__link">About</a>
                </li>
             </ul>
 
             <div class="navigation__icon-box">
-               <a href="newPost.html" class="navigation__link">
-                  <ion-icon name="newspaper-outline"  class="navigation__icon navigation__icon__new-post"></ion-icon></ion-icon>
-               </a>
                <button class="btn-search">
                   <ion-icon name="search-outline" class="navigation__icon"></ion-icon>
                </button>
@@ -64,18 +55,26 @@
                </div>
             </div>
          </nav>
-         <div class="hero-container">
-            <div class="hero-container__text">
-               <h1 class="heading-primary">Food always tastes better, when it’s shared!</h1>
-               <span class="header-text">Get to know other foodies, have a look into their kitchens and enjoy recipes,
-                  that are easy to prepare.</span>
-            </div>
-         </div>
       </header>
       <main>
-         <section class="section-intro">
-            <h2 class="heading-secondary">Here you can find various food stories and delicious gluten free recipes </h2>
-         </section>
+         <div class="recipes__text">
+            <h2 class="heading-secondary">Recipes</h2>
+            <p class="recipes__text--content">
+               Here you can find our recipes. You can search in a certain category, look for a specific ingredient or just browse through all of them. We hope you enjoy!
+            </p>
+            <form class="filter-recipes">
+               <select name="category_name" class="filter-recipes__select">
+                  <option value="">All</option>
+                  <option id="" value="breakfast">Breakfast</option>
+                  <option id="" value="dinner">Dinner</option>
+                  <option id="" value="desert">Desert</option>
+                  <option id="" value="salad">Salad</option>
+                  <option id="" value="savory">Savory</option>
+                  <option id="" value="snacks">Snacks</option>
+               </select>
+               <input type="text" name="filter-text" value="" placeholder="Ingredients" maxlength="50" required class="filter-recipes__input">
+            </form>
+         </div>
          <section class="section-posts">
             <div class="post">
                <figure class="post__img-box">
@@ -83,8 +82,7 @@
                      class="post__img">
                   <figcaption class="post__description">
                      <span class="post__date">Aug 15,2021</span>
-                     <h2 class="heading-secondary">Story Title</h2>
-                     <span class="post__desc">This is one sentence obout the story</span>
+                     <h2 class="heading-secondary">Recipe Title</h2>
                      <button class="btn btn__post">Read more</button>
                   </figcaption>
                </figure>
@@ -95,8 +93,7 @@
                      class="post__img">
                   <figcaption class="post__description">
                      <span class="post__date">Aug 15,2021</span>
-                     <h2 class="heading-secondary">Story Title</h2>
-                     <span class="post__desc">This is one sentence obout the story</span>
+                     <h2 class="heading-secondary">Recipe Title</h2>
                      <button class="btn btn__post">Read more</button>
                   </figcaption>
                </figure>
@@ -108,8 +105,7 @@
                      class="post__img">
                   <figcaption class="post__description">
                      <span class="post__date">Aug 15,2021</span>
-                     <h2 class="heading-secondary">Story Title</h2>
-                     <span class="post__desc">This is one sentence obout the story</span>
+                     <h2 class="heading-secondary">Recipe Title</h2>
                      <button class="btn btn__post">Read more</button>
                   </figcaption>
                </figure>
@@ -120,14 +116,14 @@
                      class="post__img">
                   <figcaption class="post__description">
                      <span class="post__date">Aug 15,2021</span>
-                     <h2 class="heading-secondary">Story Title</h2>
-                     <span class="post__desc">This is one sentence obout the story</span>
+                     <h2 class="heading-secondary">Recipe Title</h2>
                      <button class="btn btn__post">Read more</button>
                   </figcaption>
                </figure>
 
             </div>
          </section>
+
          <div class="pagination">
             <button class="pagination__btn">
                <ion-icon name="chevron-back-outline" class="pagination__icon"></ion-icon>
@@ -141,38 +137,11 @@
             <button class="pagination__btn">
                <ion-icon name="chevron-forward-outline" class="pagination__icon"></ion-icon>
             </button>
-         </div>
-
-         
-         
-         <section class="section-promo">
-            <div class="promo">
-               <div class="promo__book">
-                  <img src="./src/img/cookbook-small.jpg" alt="">
-               </div>
-               <div class="promo__box">
-                  <span class="promo__box--subtitle">Order Our Book Now</span>
-                  <p class="promo__box--text">We are very excited to share our first book with you in collaboration with the talented team at Frama Cph. Get inspired
-                  by 19 new gluten-free recipes with lot'sofpictures next to captivating design content.</p>
-                  <button class="promo__btn">Order here</button>
-               </div>
-            </div>
-         </section>
-         <section class="section-newsletter">
-            <ion-icon name="mail-outline" class="newsletter__icon"></ion-icon>
-            <h2 class="heading-secondary">We also post things via Mail. Sign up for our Newsletter.</h2>
-            <div class="newsletter__mail-box">
-               <input type="email" class="newsletter__input" placeholder="Enter email">
-               <button class=" btn newsletter__btn" type="submit">
-                  &rarr;
-               </button>
-            </div>
-         </section>
-         
+         </div> 
       </main>
    </div>
    <footer class="footer">
-      <span class="footer__text">&copy; &nbsp; Foody &nbsp;  2021</span>
+      <span class="footer__text">&copy; &nbsp; Foody &nbsp; 2021</span>
    </footer>
 
    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

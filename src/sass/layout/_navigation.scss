@@ -28,15 +28,16 @@
   &__link:hover {
     color: $color-text-dark;
 
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translate(-50%);
-      width: 50%;
-      height: 0.2rem;
-      background-color: $color-primary;
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+        width: 50%;
+        height: 0.2rem;
+        background-color: $color-primary;
+       
     }
   }
 
@@ -63,6 +64,14 @@
     &:hover{
        fill: $color-primary
     }
+
+  }
+  &__icon__new-post{
+    fill: $color-primary-dark;
+    color: $color-primary-dark;
+    margin-right: 1rem;
+    width: 3rem;
+    height: 3rem;
   }
 }
 

@@ -35,10 +35,24 @@ body {
   margin-bottom: 1rem;
 }
 
+.heading-tertiary {
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 3rem;
+}
+
 .header-text {
   font-size: 1.8rem;
   font-weight: 200;
   width: 30rem;
+}
+
+.ml-sm {
+  margin-left: 2rem;
+}
+
+.heading-center {
+  text-align: center;
 }
 
 .btn {
@@ -61,6 +75,7 @@ body {
   width: 3.5rem;
   height: 3.5rem;
   stroke: #616063;
+  margin-bottom: 1rem;
 }
 
 .newsletter__input {
@@ -72,6 +87,7 @@ body {
   font-size: 1.8rem;
   font-weight: 200;
   color: #a3a3a3;
+  margin-top: 1rem;
 }
 
 .newsletter__input:focus {
@@ -131,7 +147,7 @@ body {
 
 .post__description {
   text-align: center;
-  padding: 3rem;
+  padding: 5rem;
 }
 
 .post__date {
@@ -344,6 +360,14 @@ body {
   fill: #a0583c;
 }
 
+.navigation__icon__new-post {
+  fill: #804630;
+  color: #804630;
+  margin-right: 1rem;
+  width: 3rem;
+  height: 3rem;
+}
+
 .socials {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -369,16 +393,12 @@ body {
   color: #929292;
 }
 
-.header {
-  margin-bottom: 10rem;
-}
-
 .hero-container {
   background: -webkit-gradient(linear, right top, left top, from(rgba(204, 185, 177, 0.3)), to(rgba(33, 33, 35, 0.8))), url("https://ourfoodstories.com/wp-content/uploads/2021/08/Ruffino-Gathering-15-2048x1365.jpg");
   background: linear-gradient(to left, rgba(204, 185, 177, 0.3), rgba(33, 33, 35, 0.8)), url("https://ourfoodstories.com/wp-content/uploads/2021/08/Ruffino-Gathering-15-2048x1365.jpg");
   height: 75vh;
   position: relative;
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
 }
 
 .hero-container__text {
@@ -411,7 +431,7 @@ body {
   -webkit-column-gap: 8rem;
           column-gap: 8rem;
   margin-top: 3rem;
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
 }
 
 .section-intro {
@@ -421,16 +441,196 @@ body {
 
 .section-promo {
   margin: 0 auto;
-  margin-bottom: 15rem;
+  margin-bottom: 10rem;
 }
 
 .section-newsletter {
   max-width: 90rem;
-  margin: 0 auto;
   text-align: center;
+  margin: 10rem auto;
+  margin-bottom: 15rem;
 }
 
 .white-space {
   height: 50rem;
+}
+
+.recipes__text {
+  width: 80%;
+  margin: 10rem auto;
+}
+
+.recipes__text--content {
+  font-size: 2.2rem;
+  width: 50%;
+  font-weight: 300;
+  margin-bottom: 3rem;
+}
+
+.filter-recipes__select {
+  width: 20rem;
+  height: 2.5rem;
+  border: 1px solid #616063;
+  margin-right: 2rem;
+  color: #616063;
+}
+
+.filter-recipes__input {
+  height: 2.5rem;
+  width: 20rem;
+  border: 1px solid #616063;
+  padding: 1rem;
+}
+
+.filter-recipes__input:focus {
+  outline: none;
+}
+
+.post__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10rem 0;
+}
+
+.post__description, .post__recipe {
+  width: 80%;
+  max-width: 70rem;
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+.post__gallery {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  row-gap: 5rem;
+  -webkit-column-gap: 3rem;
+          column-gap: 3rem;
+  width: 80%;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10rem;
+}
+
+.post__recipe {
+  background-color: #f5f1ef;
+  padding: 5rem;
+  font-weight: 200;
+}
+
+.post-view__img {
+  width: 70rem;
+}
+
+.post-view__heading {
+  padding: 5rem;
+}
+
+.post-view__heading--date {
+  font-size: 1.6rem;
+}
+
+.post-view__heading--subtitle {
+  font-size: 2rem;
+  line-height: 1.45;
+  font-weight: 300;
+}
+
+.post-view__description__text {
+  font-size: 1.8rem;
+  text-indent: 2rem;
+  font-weight: 300;
+  margin-bottom: 10rem;
+}
+
+.post-view__gallery-img__1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+  width: 100%;
+}
+
+.post-view__gallery-img__2 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  width: 100%;
+}
+
+.post-view__gallery-img__3 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3/5;
+  width: 100%;
+}
+
+.recipe__ingredients--title {
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.recipe__ingredients-list {
+  list-style: none;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  line-height: 1.45;
+  text-indent: 1rem;
+}
+
+.recipe__instructions {
+  font-size: 1.8rem;
+}
+
+.new-post {
+  margin-top: 5rem;
+  padding: 3rem;
+}
+
+.new-post-container {
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15rem;
+  margin-top: 10rem;
+}
+
+.new-post__field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50rem;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+
+.new-post__field--label {
+  margin-bottom: 1rem;
+}
+
+.new-post__field--input {
+  padding: .5rem;
+  border: 1px solid #616063;
+}
+
+.new-post__field--select {
+  padding: .5rem;
+  background-color: #fff;
+  border: 1px solid #616063;
 }
 /*# sourceMappingURL=main.css.map */
