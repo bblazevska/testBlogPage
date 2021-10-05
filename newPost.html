@@ -13,7 +13,7 @@
 
    <link rel="stylesheet" href="./src/sass/main.css">
 
-   <script defer src="./src/js/main.js"></script>
+   <script defer src="./src/js/newPost.js"></script>
    <title>Create Post | Foody</title>
 </head>
 
@@ -66,12 +66,12 @@
             <div class="new-post-container__post">
 
                <div class="new-post__field">
-                  <label for="title" class="new-post__field--label">Post Title</label>
-                  <input type="text" class="new-post__field--input" maxlength="100" placeholder="Title">
+                  <label for="title" class="new-post__field--label label-title">Post Title</label>
+                  <input type="text" class="new-post__field--input input-title" maxlength="100" placeholder="Title" required>
                </div>
                <div class="new-post__field">
-                  <label for="title" class="new-post__field--label">Category</label>
-                  <select name="category_name" class="new-post__field--select">
+                  <label for="title" class="new-post__field--label label-category">Category</label>
+                  <select name="category_name" class="new-post__field--select select-category" required>
                      <option value="">Choose category</option>
                      <option id="0" value="breakfast">Breakfast</option>
                      <option id="1" value="dinner">Dinner</option>
@@ -85,35 +85,57 @@
                
                <div class="new-post__field">
                   <label for="desc" class="new-post__field--label">Short description</label>
-                  <input type="text" name="desc" class="new-post__field--input" maxlength="200" placeholder="Write short description">
+                  <input type="text" name="desc" class="new-post__field--input input-short-description" maxlength="400" placeholder="Write short description" required>
+               </div>
+               <div class="new-post__field">
+                  <label for="desc" class="new-post__field--label label-imgUrl">Image Url</label>
+                  <input type="url" name="desc" class="new-post__field--input input-imgUrl" pattern="https://.*" placeholder="https://example.com"  required>
                </div>
                <div class="new-post__field">
                   <label for="content" class="new-post__field--label">Content</label>
-                  <textarea name="content" id="content" cols="30" rows="10"></textarea>
+                  <textarea name="content" id="content"  class="new-post__field--textarea input-content" cols="30" rows="10" required></textarea>
+               </div>
+               <div class="new-post__field">
+                  <label for="date" class="new-post__field--label">Date (optional)</label>
+                  <input type="text" name="date" class="new-post__field--input input-date" placeholder="Month day, year" required>
+               </div>
+               <div class="new-post__field">
+                  <label for="images" class="new-post__field--label ">Images</label>
+                  <input type="url" name="images" class="new-post__field--input multiple input-images" pattern="https://.*" maxlength="100" placeholder="https://example.com">
+                  <input type="url" name="images" class="new-post__field--input multiple input-images" pattern="https://.*" maxlength="100" placeholder="https://example.com">
+                  <input type="url" name="images" class="new-post__field--input multiple input-images" pattern="https://.*" maxlength="100" placeholder="https://example.com">
                </div>
             </div>
 
             <div class="new-post-container__recipe">
                <div class="new-post__field">
-                  
                   <label for="recipe-title" class="new-post__field--label">Recipe Title</label>
-                  <input type="text" name="recipe-title" class="new-post__field--input" maxlength="100" placeholder="Recipe Title">
+                  <input type="text" name="recipe-title" class="new-post__field--input input-rtitle" maxlength="100" placeholder="Recipe Title">
                </div>
                <div class="new-post__field">
-                  <label for="title" class="new-post__field--label">Ingredients</label>
-                  <input type="text" name="title" class="new-post__field--input" maxlength="100" placeholder="">
+                  <label for="ingredients" class="new-post__field--label">Ingredients</label>
+                  <input type="text" name="ingredients" class="new-post__field--input multiple input-ingredients" maxlength="100" placeholder="Ingredient 1" required>
+                  <input type="text" name="ingredients" class="new-post__field--input multiple input-ingredients" maxlength="100" placeholder="Ingredient 2" required>
+                  <input type="text" name="ingredients" class="new-post__field--input multiple input-ingredients" maxlength="100" placeholder="Ingredient 3" required>
+                  <input type="text" name="ingredients" class="new-post__field--input multiple input-ingredients" maxlength="100" placeholder="Indredient 4">
+               </div>
+               <div class="new-post__field">
+                  <label for="toppings" class="new-post__field--label">Toppings</label>
+                  <input type="text" name="toppings" class="new-post__field--input multiple input-toppings" maxlength="100" placeholder="Topping 1">
+                  <input type="text" name="toppings" class="new-post__field--input multiple input-toppings" maxlength="100" placeholder="Topping 2">
+                  <input type="text" name="toppings" class="new-post__field--input multiple input-toppings" maxlength="100" placeholder="Topping 3">
                </div>
                <div class="new-post__field">
                   <label for="instructions" class="new-post__field--label">Instructions</label>
-                  <textarea name="instructions" id="content" cols="30" rows="10"></textarea>
+                  <textarea name="instructions" id="content" class="new-post__field--textarea input-instructions" cols="30" rows="10" required></textarea>
                </div>
+               <div class="new-post__field centered">
+                  <button type="submit" class="new-post__field--btn btn-submit">Add Post</button>
+            </div>
             </div>
          </div>
       </main>
    </div>
-   <!-- <footer class="footer">
-      <span class="footer__text">&copy; &nbsp; Foody &nbsp; 2021</span>
-   </footer> -->
 
    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

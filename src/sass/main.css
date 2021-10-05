@@ -658,6 +658,7 @@ body {
 
 .new-post {
   margin-top: 5rem;
+  background-color: #f5f1ef;
   padding: 3rem;
 }
 
@@ -668,7 +669,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   gap: 15rem;
-  margin-top: 10rem;
+  margin-top: 5rem;
 }
 
 .new-post__field {
@@ -684,8 +685,14 @@ body {
   margin-bottom: 4rem;
 }
 
+.new-post__field > *:focus {
+  outline: none;
+}
+
 .new-post__field--label {
   margin-bottom: 1rem;
+  font-weight: 500;
+  color: #804630;
 }
 
 .new-post__field--input {
@@ -697,5 +704,21 @@ body {
   padding: .5rem;
   background-color: #fff;
   border: 1px solid #616063;
+}
+
+.new-post__field--btn {
+  width: 30%;
+  padding: 2rem;
+  text-transform: uppercase;
+  border: none;
+  background-color: #a0583c;
+}
+
+.multiple {
+  margin-bottom: 1rem;
+}
+
+.centered {
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
