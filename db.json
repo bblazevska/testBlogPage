@@ -1,19 +1,111 @@
 {
   "posts": [
     {
-      "id": 23423432,
-      "title": "Hello world",
-      "category": ["test", "javascript"],
-      "imageUrl": "https://picsum.photos/500",
-      "description": "Lorem ipsum dolor sit amet",
-      "content": "",
-      "date": "null",
-      "author": "User1",
+      "id": 0,
+      "title": "Enjoying a Picnic with a refreshing and easy to make Mango-Pineapple Summer Drink",
+      "category": "drink",
+      "imageUrl": "https://ourfoodstories.com/wp-content/uploads/2021/06/Belvedere-Summer-Picnic-13-933x1400.jpg",
+      "description": "To celebrate Midsummer today we created a wonderful refreshing and tasty summer cocktail for you!",
+      "content": "What could be better than a delicious and fresh summer drink during these lovely and warm summer days?! When we found this gorgeous wild flower fields in the woods last week, we knew it would be the perfect spot for a cozy summer picnic. So we took our bikes for a quick bike tour and enjoyed some wonderful hours here. We teamed up with Belvedere Vodka again and used their pretty summer bottle edition for this Mango-Pineapple Summer Vodka drink. It’s super easy to make and basically tastes like summer in a glass! We used pineapple juice, mango juice, orange juice, passionfruit juice, a little bit of lemon, ginger syrup, Belvedere Vodka and a shot of whipping cream for the summer cocktail – super delicious! We also took some gluten-free bread, a little bit of cheese and some fruits to our picnic – a wonderful addition to the fruity drink. We hope you enjoy the recipe and happy Midsummer guys! Please drink responsibly.",
+      "date": "Jun 25, 2021",
+      "author": "Foody",
+      "images": [
+        "https://ourfoodstories.com/wp-content/uploads/2021/06/Belvedere-Summer-Picnic-08.jpg",
+        "https://ourfoodstories.com/wp-content/uploads/2021/06/Belvedere-Summer-Picnic-02-933x1400.jpg",
+        "https://ourfoodstories.com/wp-content/uploads/2021/06/Belvedere-Summer-Picnic-04.jpg"
+      ],
       "recipe": {
-        "recipe-title": "",
-        "ingredients": [],
+        "rtitle": "Mango-Pineapple Summer Vodka",
+        "ingredients": [
+          "6cl pineapple juice",
+          "6cl mango juice",
+          "3cl orange juice",
+          "1cl lemon juice",
+          "2 cl ginger syrup",
+          "4cl Belvedere Vodka",
+          "1 passion fruit",
+          "ice cubes",
+          " 3cl whipping cream"
+        ],
+        "toppings": [
+          "fresh mint or lemon verbena",
+          "lemon wedge or slice",
+          "glass straw"
+        ],
+        "instructions": "Pour pineapple juice, mango juice, orange juice, lemon juice, ginger syrup and Belvedere Vodka into a shaker. Halve the passion fruit and strain the juice through a fine metal sieve into the shaker. Add ice cubes and shake well, then pour into a well-chilled cocktail glass and add a dash of whipping cream. Optionally, you can also add the whipping cream to the shaker. Serve the Mango-Pineapple Summer Vodka with fresh mint, a lemon wedge and a glass straw."
+      }
+    },
+    {
+      "id": 1,
+      "title": "Gluten-free Waffles with Chai Ice-Cream and Cherry Compote",
+      "category": "breakfast",
+      "imageUrl": "https://ourfoodstories.com/wp-content/uploads/2020/12/Chai-Eis-mit-glutenfreien-Waffeln01.jpg",
+      "description": "We are excited to share a new recipe with you guys today - perfect for a little treat during the Christmas holidays.",
+      "content": "One of our absolutely favorite things during winter is chai tea. It makes the cold winter months so much more cozy and always reminds us of lovely walks through the city while admiring all the beautiful christmas lights in town in December. Another favorite of ours are gluten-free waffles – we already have many gluten-free waffle recipes on the blog, because what could be more comforting than a warm waffle for breakfast, right? To combine those two favorites of ours we decided to make gluten-free waffles with a cherry compote and chai ice-cream. Such a delicious combination! We prepared the batter for the gluten-free waffles with the Kenwood Cooking Chef XL kitchen machine and also the cherry compote. What we love about the Cooking Chef XL is that it has an integrated scale, which makes it very easy to prepare batter and many other dishes. The cherry compote we cooked with the induction function of the Cooking Chef XL kitchen machine, which worked out so well. It’s super nice, that you can prepare so many different recipes with only one machine, we love it! We hope you enjoy our Christmas recipe during the holidays, we will make it again for sure.",
+      "date": "Dec 21, 2020 ",
+      "author": "Foody",
+      "images": [
+        "https://ourfoodstories.com/wp-content/uploads/2020/12/Kenwood-Magazin-Querformat01.jpg",
+        "https://ourfoodstories.com/wp-content/uploads/2020/12/Kenwood-Magazin-Hochformat01-933x1400.jpg",
+        "https://ourfoodstories.com/wp-content/uploads/2020/12/heise-kirschen-mit-eis-und-waffeln.jpg"
+      ],
+      "recipe": {
+        "rtitle": "Gluten-free Waffles",
+        "ingredients": [
+          "3 eggs (size M or L)",
+          "250g gluten-free flour mixture (or rice flour or buckwheat flour)",
+          " 2 tsp baking powder",
+          "50g butter",
+          "3 tbsp sugar (or maple syrup)",
+          " 1 pinch of salt",
+          "about 300ml milk or plant milk (we used soy milk)",
+          "coconut oil or butter for greasing the waffle iron"
+        ],
         "toppings": [],
-        "prepare": ""
+        "instructions": "For the waffles, separate the eggs and beat the egg whites for 30-60 seconds until stiff. Melt the butter, let it cool down briefly, then add the milk. Mix gluten-free flour, baking powder and salt. Beat the egg yolks with the sugar for 30 seconds, then fold in the butter-milk mixture. Mix in the flour mixture in 2 portions with a whisk – the dough should not be too runny or too firm. Finally, fold in the egg whites in 2-3 portions with a silicone spatula. Preheat and grease the waffle iron, then fry the waffle batter in portions."
+      }
+    },
+    {
+      "id": 2,
+      "title": "Gluten-free Vegan Pizza with Sweet-Potato-Dough",
+      "category": "dinner",
+      "imageUrl": "https://ourfoodstories.com/wp-content/uploads/2018/07/Best-vegan-vegetable-pizza.jpg",
+      "description": "When we visited our dear friend Frida in her charming old schoolhouse in Sweden last month, Nora made our favorite gluten-free vegan pizza one evening. We are so excited to share the recipe with you guys today!",
+      "content": "Since last winter we want to share the recipe for our favorite gluten-free vegan pizza with you and somehow it never made it to the blog. Now it’s really about time and we are excited to hear your feedback. In winter we made the dough with pumpkin, but since there was no pumpkin available in June we used sweet potato instead, which worked out so well! For the topping we used our favorite vegan spinach pesto, that we already shared with you in this post and all our favorite vegetables, like mushrooms, tomatoes, carrots, fennel and onions. We usually also put olives and artichoke hearts on top, but somehow couldn’t find them in the swedish countryside. Anyways this gluten-free vegan pizza is a true treat and you seriously don’t need cheese on top, even if you’re not vegan. We all loved it and it was such a pleasure to enjoy it in the dreamy garden of our dear friend Frida.",
+      "date": " Aug 04, 2021 ",
+      "author": "Foody",
+      "images": [
+        "https://ourfoodstories.com/wp-content/uploads/2018/07/vegan-pizza-recipe.jpg",
+        "https://ourfoodstories.com/wp-content/uploads/2018/07/Glutenfree-and-vegan-pizza-recipe-933x1400.jpg",
+        "https://ourfoodstories.com/wp-content/uploads/2018/07/Best-vegan-vegetable-pizza.jpg"
+      ],
+      "recipe": {
+        "rtitle": "Mango-Pineapple Summer Vodka",
+        "ingredients": [
+          "250g gluten-free flour mix for yeast dough (we took the organic „Universal“-flour mix from Bauckhof, which consists of cornstarch, rice flour, millet flour and guar gum)",
+          "150g sweet potato, baked (about 0,5-1 sweet potato)",
+          "200g coconut milk",
+          "1 pck active dry yeast",
+          "1 tsp pizza spice",
+          "1 pinch of caraway",
+          "1 pinch of salt",
+          "1 tbsp olive oil",
+          "",
+          "80g spinach",
+          "30g pumpkin seeds",
+          "50g olive oil",
+          "2 garlic cloves, pressed",
+          "1 pinch of salt"
+        ],
+        "toppings": [
+          "2 carrots",
+          "4-5 champignon mushrooms",
+          "8-10 cherry tomatoes",
+          "1 fennel",
+          "2-3 small red onions",
+          "(small recommendation: add some olives, if you like, they go very well with the other ingredients)"
+        ],
+        "instructions": "Peel the sweet potato, cut into slices and bake in the oven on a sheet of baking paper at 200°C (400°F) top/bottom heat until soft. Then take 150g of the baked sweet potato and purée together with the coconut milk. Blend gluten-free flour mix, active dry yeast, salt and spices in a mixing bowl. Add the sweet potato purée and olive oil (the purée should be warm, but not hot) and knead the dough for 2 minutes (use disposable gloves, if possible) – don´t knead too long, the dough should be still relatively sticky. Take a new mixing bowl (plastik, no metal!), brush the inside with a vegetable oil and leave the gluten-free yeast dough in the bowl for 1,5 hours on a warm spot to let the dough raise, covered with a damp kitchen towel. In the meantime prepare the vegan spinach pesto. Mix all ingredients in a blender. When the dough is raised, overturn it carefully on a big floured piece of baking paper, flour the top and the rolling pin as well and roll out the dough to a large circle (if you want to work accurate, you can draw a large circle with a pencil on the baking paper as orientation before and cut away the overlapping edges with a pizza cutter afterwards). Pull the gluten-free pizza dough together with the baking paper on a baking sheet and let raise for another 30-40 minutes, before you spread the vegan spinach pesto on top. Meanwhile preheat the oven to 250°C (500°F) top/bottom heat and cut the vegetables: cut the carrots into sticks, the mushrooms into slices, the red onions in quarters, the fennel into slices and the tomatoes into halves. After you spread the pesto, start topping with carrots, followed by the fennel, mushrooms, tomatoes and onions. Brush the mushrooms and onions with some vegetable oil. Then bake the gluten-free vegan pizza for about 30 minutes until crispy, then top with pumpkin seeds, seasalt, pepper and fresh thyme. Serve together with a few lemon quarters."
       }
     }
   ],
