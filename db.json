@@ -3,7 +3,7 @@
     {
       "id": 0,
       "title": "Enjoying a Picnic with a refreshing and easy to make Mango-Pineapple Summer Drink",
-      "category": "drink",
+      "category": "Drinks",
       "imageUrl": "https://ourfoodstories.com/wp-content/uploads/2021/06/Belvedere-Summer-Picnic-13-933x1400.jpg",
       "description": "To celebrate Midsummer today we created a wonderful refreshing and tasty summer cocktail for you!",
       "content": "What could be better than a delicious and fresh summer drink during these lovely and warm summer days?! When we found this gorgeous wild flower fields in the woods last week, we knew it would be the perfect spot for a cozy summer picnic. So we took our bikes for a quick bike tour and enjoyed some wonderful hours here. We teamed up with Belvedere Vodka again and used their pretty summer bottle edition for this Mango-Pineapple Summer Vodka drink. It’s super easy to make and basically tastes like summer in a glass! We used pineapple juice, mango juice, orange juice, passionfruit juice, a little bit of lemon, ginger syrup, Belvedere Vodka and a shot of whipping cream for the summer cocktail – super delicious! We also took some gluten-free bread, a little bit of cheese and some fruits to our picnic – a wonderful addition to the fruity drink. We hope you enjoy the recipe and happy Midsummer guys! Please drink responsibly.",
@@ -37,7 +37,7 @@
     {
       "id": 1,
       "title": "Gluten-free Waffles with Chai Ice-Cream and Cherry Compote",
-      "category": "breakfast",
+      "category": "Breakfast",
       "imageUrl": "https://ourfoodstories.com/wp-content/uploads/2020/12/Chai-Eis-mit-glutenfreien-Waffeln01.jpg",
       "description": "We are excited to share a new recipe with you guys today - perfect for a little treat during the Christmas holidays.",
       "content": "One of our absolutely favorite things during winter is chai tea. It makes the cold winter months so much more cozy and always reminds us of lovely walks through the city while admiring all the beautiful christmas lights in town in December. Another favorite of ours are gluten-free waffles – we already have many gluten-free waffle recipes on the blog, because what could be more comforting than a warm waffle for breakfast, right? To combine those two favorites of ours we decided to make gluten-free waffles with a cherry compote and chai ice-cream. Such a delicious combination! We prepared the batter for the gluten-free waffles with the Kenwood Cooking Chef XL kitchen machine and also the cherry compote. What we love about the Cooking Chef XL is that it has an integrated scale, which makes it very easy to prepare batter and many other dishes. The cherry compote we cooked with the induction function of the Cooking Chef XL kitchen machine, which worked out so well. It’s super nice, that you can prepare so many different recipes with only one machine, we love it! We hope you enjoy our Christmas recipe during the holidays, we will make it again for sure.",
@@ -66,7 +66,7 @@
     {
       "id": 2,
       "title": "Gluten-free Vegan Pizza with Sweet-Potato-Dough",
-      "category": "dinner",
+      "category": "Dinner",
       "imageUrl": "https://ourfoodstories.com/wp-content/uploads/2018/07/Best-vegan-vegetable-pizza.jpg",
       "description": "When we visited our dear friend Frida in her charming old schoolhouse in Sweden last month, Nora made our favorite gluten-free vegan pizza one evening. We are so excited to share the recipe with you guys today!",
       "content": "Since last winter we want to share the recipe for our favorite gluten-free vegan pizza with you and somehow it never made it to the blog. Now it’s really about time and we are excited to hear your feedback. In winter we made the dough with pumpkin, but since there was no pumpkin available in June we used sweet potato instead, which worked out so well! For the topping we used our favorite vegan spinach pesto, that we already shared with you in this post and all our favorite vegetables, like mushrooms, tomatoes, carrots, fennel and onions. We usually also put olives and artichoke hearts on top, but somehow couldn’t find them in the swedish countryside. Anyways this gluten-free vegan pizza is a true treat and you seriously don’t need cheese on top, even if you’re not vegan. We all loved it and it was such a pleasure to enjoy it in the dreamy garden of our dear friend Frida.",
@@ -79,7 +79,7 @@
       "recipe": {
         "rtitle": "Mango-Pineapple Summer Vodka",
         "ingredients": [
-          "250g gluten-free flour mix for yeast dough (we took the organic „Universal“-flour mix from Bauckhof, which consists of cornstarch, rice flour, millet flour and guar gum)",
+          "250g gluten-free flour mix for yeast dough",
           "150g sweet potato, baked (about 0,5-1 sweet potato)",
           "200g coconut milk",
           "1 pck active dry yeast",
@@ -103,6 +103,140 @@
           "(small recommendation: add some olives, if you like, they go very well with the other ingredients)"
         ],
         "instructions": "Peel the sweet potato, cut into slices and bake in the oven on a sheet of baking paper at 200°C (400°F) top/bottom heat until soft. Then take 150g of the baked sweet potato and purée together with the coconut milk. Blend gluten-free flour mix, active dry yeast, salt and spices in a mixing bowl. Add the sweet potato purée and olive oil (the purée should be warm, but not hot) and knead the dough for 2 minutes (use disposable gloves, if possible) – don´t knead too long, the dough should be still relatively sticky. Take a new mixing bowl (plastik, no metal!), brush the inside with a vegetable oil and leave the gluten-free yeast dough in the bowl for 1,5 hours on a warm spot to let the dough raise, covered with a damp kitchen towel. In the meantime prepare the vegan spinach pesto. Mix all ingredients in a blender. When the dough is raised, overturn it carefully on a big floured piece of baking paper, flour the top and the rolling pin as well and roll out the dough to a large circle (if you want to work accurate, you can draw a large circle with a pencil on the baking paper as orientation before and cut away the overlapping edges with a pizza cutter afterwards). Pull the gluten-free pizza dough together with the baking paper on a baking sheet and let raise for another 30-40 minutes, before you spread the vegan spinach pesto on top. Meanwhile preheat the oven to 250°C (500°F) top/bottom heat and cut the vegetables: cut the carrots into sticks, the mushrooms into slices, the red onions in quarters, the fennel into slices and the tomatoes into halves. After you spread the pesto, start topping with carrots, followed by the fennel, mushrooms, tomatoes and onions. Brush the mushrooms and onions with some vegetable oil. Then bake the gluten-free vegan pizza for about 30 minutes until crispy, then top with pumpkin seeds, seasalt, pepper and fresh thyme. Serve together with a few lemon quarters."
+      }
+    },
+    {
+      "id": 1633508196803,
+      "title": "Gluten-free Hindbærsnitter in Copenhagen",
+      "category": "Desert",
+      "description": "Very easy and delicious gluten-free recipe for hindbærsnitter, a danish raspberry treat.",
+      "imageUrl": "https://ourfoodstories.com/wp-content/uploads/2018/04/hindb%C3%A6rsnitter-homemade-683x1024.jpg",
+      "content": "Before we start to share a wonderful series of home tours with you guys soon, we want to show you these pictures from our last Copenhagen trip, along with a very easy and delicious gluten-free recipe for hindbærsnitter, a danish raspberry treat. Each time we visit Copenhagen, we go to our favorite bakery that sells the best gluten-free pastry and bread in Copenhagen (we’ve told you all about this place in this post already). Last time we stayed in Copenhagen for 10 wonderful long days though and so we had enough time to bake these delicious gluten-free hindbærsnitter oursleves. If it’s available to rent we always try to stay in the same airbnb – just look at these stunning windows and the most wonderful spot with a view over the canal! We could sit there the whole day and just enjoy the view. Even if we mainly come for work to Copenhagen it always feels like a holiday when you have breakfast with that lovely view and hear the sea gulls flying over the canal and the boots. And the gluten-free hindbærsnitter are the perfect treat to bake when travelling, because they are so easy to make, you definitely can’t go wrong and they taste so delicious! We are already looking forward to make them again in summer, when raspberries are in season and we can make our own raspberry jam for it. Maybe we can share a recipe for the jam as well then. But for now we hope you enjoy these gluten-free hindbærsnitter with your favorite raspberry jam!",
+      "date": "Sep 04, 2021",
+      "images": [
+        "https://ourfoodstories.com/wp-content/uploads/2018/04/hindb%C3%A6rsnitter-gluten-free-1024x683.jpg",
+        "https://ourfoodstories.com/wp-content/uploads/2018/04/glutenfree-hindb%C3%A6rsnitter-683x1024.jpg",
+        "https://ourfoodstories.com/wp-content/uploads/2018/04/tea-by-the-canal-933x1400.jpg"
+      ],
+      "ingredients": [
+        "350g rice flour",
+        "200g cold salted butter (or just add a pinch of salt to the recipe)",
+        "150g powdered sugar",
+        "1 egg (size M/L)"
+      ],
+      "toppings": [
+        "200g powdered sugar",
+        "70g raspberry jam",
+        "fresh raspberries"
+      ],
+      "instructions": "Bend rice flour, powdered sugar (if the powdered sugar is to crumbly you should sieve it before you use it) and ground vanilla in a mixing bowl. Then cut the cold butter into small cubes and knead into the dry ingredients for 1-2 minutes. Then knead in the egg and eventually 1-3 tbsp cold water until the pastry has a more smooth consistence. Form the gluten-free pastry to a flat brick and cover with clingfilm. Leave the pastry for 1 hour or longer in the fridge. Afterwards preheat the oven to 175°C (350°F) top/bottom heat. Now halve the gluten-free pastry into 2 pieces with the same weight. Draw a rectangular with the size of a DINA-4 sheet on 2 pieces of baking paper – use a pencil or similar. Then knead the pastry pieces again for a short moment, so the pastry gets a bit more flexible. Roll out each pastry on one of the baking paper in the size of the rectangular – flour the baking paper and pastry a little bit before. Then trim the edges. Cut each pastry again into half, so you have 4 pastry pieces. Now bake the pastry for 20 minutes just until the edges start to turn brown (in our oven just fitted two pastry pieces, the other two we just baked right afterwards). Meanwhile baking you can prepare the icing. For that you just have to strain the raspberry jam, so the seeds are left. You´ll need about 40g raspberry jelly. Then mix the raspberry jelly with the powdered sugar and add a little bit water, so the icing is creamy and not too liquid. After baking let the pastry cool down a moment before you spread the raspberry jam on one of the halves. Place the other half carefully on top and press lightly on. Coat the top with icing. When the icing is firm, cut the pastry pieces in smaller pieces. Serve the gluten-free Hindbærsnitter with fresh berries and grated coconut."
+    },
+    {
+      "id": 1633524625376,
+      "title": "Goat Milk Rice with homemade Peach Compote",
+      "category": "Breakfast",
+      "description": "We are ecxited to share a new and simple recipe with you guys today, perfect for a lovely summer morning!",
+      "imageUrl": "https://ourfoodstories.com/wp-content/uploads/2019/07/goatmilk-rice-with-peach-compote.jpg",
+      "content": "The last hot weeks of summer are here and we so enjoy it! We are currently in Sweden (more about that in our next post) and the weather here is simply wonderful right now. If you’re longing for a cold and fruity breakfast, this lovely goat milk rice with homemade compote is simply divine! It’s not long anymore that we can have these delicious summer fruits this year, so making compotes is definitely a good way to enjoy them a few weeks longer. Of course you can also serve this breakfast warm during autumn and winter, maybe with a nice apple compote instead. When we photographed the goat milk rice it was actually quite a moody day and the garden was the perfect scenery for this little cozy set up. With our dear friends and neighbors Rahel, Lea and Anita and we enjoyed the goat milk rice with homemade compote and we all loved it. We hope you guys will enjoy it too! We are currently really into videos and hope to have some time to do more recipe videos for you soon – what do you guys think?\n",
+      "date": "Aug 26, 2019 ",
+      "images": [
+        "https://ourfoodstories.com/wp-content/uploads/2019/07/goat-milkrice-with-peach-compote-933x1400.jpg",
+        "https://ourfoodstories.com/wp-content/uploads/2019/07/peach-compote-recipe-933x1400.jpg",
+        "https://ourfoodstories.com/wp-content/uploads/2019/07/gathering-inspirations-933x1400.jpg"
+      ],
+      "recipe": {
+        "rtitle": "Glutenfree Goat-Rice Pudding with Peach-Apricot-Compote",
+        "ingredients": [
+          "250g pudding rice",
+          "1000ml goat milk (or another one, if you don´t like the taste)",
+          "1 pinch of salt",
+          "400g mix of peaches and apricots"
+        ],
+        "toppings": [
+          "1 tbsp coconut flakes or similar",
+          "1 handfull redcurrants or raspberries",
+          ""
+        ],
+        "instructions": "Bring the goat milk to boil with a little pinch of salt, add the pudding rice and cook on low heat for about 25-30 minutes (as recommended on the packing instructions) – stir occasionally. Meanwhile pit the peaches and apricots, slices them in thin wedges and place them together with the sugar in a pot, add little water (max. 200ml), so the fruit is slightly covered and add the tea strainer with the lavender. Add the lemon juice and ground vanilla, bring everything to boil and let simmer for 10-15 minutes. Afterwards remove the tea strainer and thicken the peach-apricote-compote with the cornstarch (mix 3-4 tbsp liquid with the cornstach and stir this into the compote) or fill the soft fruits into a jar and the liquid into a carafe, which you can serve to the rice pudding. If you serve the rice pudding in a glass, start with a layer of rice pudding, then a layer of compote and a few redcurrants, followed by a second layer of rice pudding and compote and a few coconut flakes and redcurrants for topping."
+      }
+    },
+    {
+      "id": 1633525295712,
+      "title": "Gluten-free Cheesecake with Meringue",
+      "category": "Desert",
+      "description": "We have another easy and delicious baking recipe for you guys today - our favorite gluten-free cheesecake with meringue.",
+      "imageUrl": "https://ourfoodstories.com/wp-content/uploads/2020/03/cheesecake-with-meringue-topping-933x1400.jpg",
+      "content": "In these very strange and challenging times it feels so good to calm the mind while baking a simple cake in the kitchen. So today’s recipe is very easy to make and of course very delicious. What could be more comforting than a nice cheesecake 🙂 Our recipe is inspired by Nora’s favorite childhood cheesecake that her mother used to bake for her. Of course we turned it into a gluten-free version. The cake has a wonderful and fluffy meringue topping, so good! We hope you guys enjoy our gluten-free cheesecake with meringue recipe!",
+      "date": "Oct 06 2021",
+      "images": [
+        "https://ourfoodstories.com/wp-content/uploads/2020/03/glutenfree-cheesecake-recipe-933x1400.jpg",
+        "https://ourfoodstories.com/wp-content/uploads/2020/03/glutenfree-recipe-cheesecake-933x1400.jpg",
+        "https://ourfoodstories.com/wp-content/uploads/2020/03/cheesecake-with-meringue-933x1400.jpg"
+      ],
+      "recipe": {
+        "rtitle": "Gluten-free Cheesecake with Meringue",
+        "ingredients": [
+          "250g gluten-free flour mix or rice flour ",
+          "1 tsp baking powder",
+          "80g cane sugar",
+          "1 pinch of salt"
+        ],
+        "toppings": [
+          "3 egg whites",
+          "80g sugar (preferably fine sugar)",
+          "1 pinch of salt"
+        ],
+        "instructions": "Preheat the oven to 180°C/360°F top and bottom heat. Line the bottom of the springform pan with baking paper, butter and flour the sides. Mix gluten-free flour with baking powder, sugar and salt, then add the soft butter in small pieces and knead everything, add the egg and continue kneading. If the pastry is too crumbly or dry, add 1-2 tablespoons of cold water. Spread the pastry thinly on the bottom and edge of the springform pan and press it on with your fingers. For the filling, mix all the ingredients except the cornstarch in a mixing bowl with the electric whisk, then beat in the cornstarch. Pour the filling into the springform pan and bake the gluten-free cheesecake for 50 minutes, beat the egg whites with the salt semi-stiff just before the end of the baking time, then gradually add the sugar and beat until stiff for 1-2 minutes. Take the cheesecake out of the oven, turn the oven temperature down to 160°C/360°F. Spread the meringue evenly on the cheesecake, leaving 1cm free from the edge as the meringue will expand while baking. Bake the gluten-free cheesecake with meringue for another 15-20 minutes until the meringue turns golden brown. Let the gluten-free cheesecake with meringue cool down for at least 1 hour before serving."
+      }
+    },
+    {
+      "id": 1633528397220,
+      "title": "Gluten-free Chocolate-Cherry Cake with Berries",
+      "category": "Dinner",
+      "description": "Before we completely dive into all the wonderful autumn recipes, we want to share this late summer Chocolate Cherry Cake recipe with you guys!",
+      "imageUrl": "https://ourfoodstories.com/wp-content/uploads/2021/08/summer-picnic-15.jpg",
+      "content": "This lovely gluten-free summer chocolate cherry cake with berries is so easy to make and so delicious! Chocolate, cherries, berries and cream are always a winning combination, you can’t go wrong with that! A few weeks ago we discovered this dreamy grass field on a bike tour and just knew we had to come back for a little picnic. The light was simply wonderful, definitely one of those summer evenings you won’t forget. The gluten-free chocolate cherry cake might be not the most practical picnic food to bring along, but it was definitely worth it! As cherries are out of season now, we would recommend to use blackberries and pears instead – so delicious! We hope you enjoy these late summer days, before autumn sets in.",
+      "date": "Sep 13, 2021 ",
+      "images": [
+        "https://ourfoodstories.com/wp-content/uploads/2021/08/summer-picnic-23.jpg",
+        "https://ourfoodstories.com/wp-content/uploads/2021/08/summer-cake.jpg",
+        "https://ourfoodstories.com/wp-content/uploads/2021/08/summer-picnic-34.jpg"
+      ],
+      "recipe": {
+        "rtitle": "Gluten-free Chocolate-Cherry Cake with Berries",
+        "ingredients": [
+          "120g butter",
+          "4 eggs",
+          "100g sugar",
+          "50g maple syrup"
+        ],
+        "toppings": [],
+        "instructions": "Preheat the oven to 180°C/360°F top and bottom heat. Line the bottom of the springform pan with baking paper, butter and flour the sides. Melt the butter. Separate the eggs and beat the egg whites for 1 minute until semi stiff, then add the sugar and continue beating for 1 minute until the egg whites are firmer. Mix the egg yolks with the maple syrup and salt in a separate bowl, then stir in the lukewarm melted butter. Mix the gluten-free flour with the baking cocoa and the baking powder and fold alternately with the egg white under the egg yolk-butter-mixture (sieve in the flour and ideally use a silicone spatula). Pour the gluten-free batter into the springform pan and bake for about 45 minutes – do a toothstick test. Let the chocolate cake cool for about 1 hour, then cut into 3 layers with a long bread knife. For the filling, whip the heavy cream with the sugar, vanilla and cream stabilizer. Spread 100g cherry jam on each of the two lower cake bases, then spread a thick layer of whipped cream. Spread another layer of whipped cream on top of the cake and decorate with cherries and berries."
+      }
+    },
+    {
+      "id": 1633529275909,
+      "title": "Easy and Delicious Gluten-free Lemon Cake with Rosemary",
+      "category": "Desert",
+      "description": "Today we want to share a new gluten-free cake recipe with you guys, a gluten-free lemon cake with rosemary.",
+      "imageUrl": "https://ourfoodstories.com/wp-content/uploads/2020/03/lemon-cake-with-rosmary.jpg",
+      "content": "After the last grey and rainy weeks we needed some color on our plates, so Nora came up with this simple and delicious gluten-free lemon cake recipe. Not only the color is wonderful to look at, the whole cake has a perfect consistency and the slightly herb aroma of the rosemary fits so well with the sweet-sour taste from the lemon cake.  After some busy weeks in our Berlin studio we finally took the time to go to our beloved countryside place and it was so lovely to enjoy some slow countryside mornings here. We’ve enjoyed the gluten-free lemon cake together with our dear neighbors and friends Rahel, Lea and Anita and everyone loved it! We hope you guys like the new recipe too!",
+      "date": "Oct 07, 2020 ",
+      "images": [
+        "https://ourfoodstories.com/wp-content/uploads/2020/03/lemon-cake-933x1400.jpg",
+        "https://ourfoodstories.com/wp-content/uploads/2020/03/Lemon-cake-foodphotography.jpg",
+        "https://ourfoodstories.com/wp-content/uploads/2020/03/Lemon-cake-with-coconut-flakes-933x1400.jpg"
+      ],
+      "recipe": {
+        "rtitle": "Easy Gluten-Free Lemon Cake with Rosemary",
+        "ingredients": [
+          "250g gluten-free flour mix",
+          "2 tsp baking powder",
+          "1 tsp ground turmeric",
+          "250g soft butter"
+        ],
+        "toppings": [],
+        "instructions": "Preheat the oven to 180°C/360°F top and bottom heat. Grease and flour a loaf pan.\nMix gluten-free flour mixture, baking powder and turmeric. Beat soft butter for 1 minute with a hand mixer or kitchen machine, then gradually add sugar and finally ground vanilla and beat butter for at least 5 minutes until lightly and more fluffy. Beat in one egg at a time for about 30 seconds. Mix in 4 tbsp lemon juice and 1 tbsp zest. Add the flour and baking powder mix in 2 portions and stir in with a silicone spatula, stir in the vegetable milk in between. Fill the gluten-free batter into the loaf pan and bake the gluten-free lemon cake for 50-60 minutes – make the wooden skewer test to see if the batter is done. Let the gluten-free lemon cake cool for 15 minutes before removing the loaf pan. Sift the icing sugar (if lumpy) then mix the icing sugar with 2-3 tbsp lemon juice and spread the icing on the cake. Top the gluten-free lemon cake with lemon slices of 1/2 organic lemon and refine with coconut flakes and lemon zest. Finely chop the rosemary and sprinkle over the lemon cake."
       }
     }
   ],

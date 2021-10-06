@@ -24,13 +24,20 @@
       
    }
 
-   &__date{
-      font-style: italic;
+   &__date,
+   &__category{
       font-size: 1.4rem;
       font-weight: 300;
+   }
+   &__date{
+      font-style: italic;
       color: $color-text-light;
    }
-
+   &__category{
+      color: $color-text-dark;
+      text-transform: capitalize;
+      font-style: normal;
+   }
    &__desc{
       display: block;
       margin-bottom: 2.5rem;

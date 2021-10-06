@@ -12,7 +12,7 @@
    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;600;700&display=swap" rel="stylesheet">
 
    <link rel="stylesheet" href="./src/sass/main.css">
-   
+
    <script defer src="./src/js/recipesPage.js"></script>
    <title>Recipes | Foody</title>
 </head>
@@ -43,9 +43,9 @@
                   <ion-icon name="newspaper-outline" class="navigation__icon navigation__icon__new-post"></ion-icon>
                   </ion-icon>
                </a>
-               <button class="btn-search">
+               <!-- <button class="btn-search">
                   <ion-icon name="search-outline" class="navigation__icon"></ion-icon>
-               </button>
+               </button> -->
                <div class="socials">
                   <a href="#" class="socials__link">
                      <ion-icon name="logo-facebook" class="navigation__icon"></ion-icon>
@@ -64,23 +64,25 @@
          <div class="recipes__text">
             <h2 class="heading-secondary">Recipes</h2>
             <p class="recipes__text--content">
-               Here you can find our recipes. You can search in a certain category, look for a specific ingredient or just browse through all of them. We hope you enjoy!
+               Here you can find our recipes. You can search in a certain category, look for a specific ingredient or
+               just browse through all of them. We hope you enjoy!
             </p>
             <form class="filter-recipes">
+               <label for="category_name" class="filter-recipes__label">Filter Recipes:</label>
                <select name="category_name" class="filter-recipes__select">
                   <option value="">All</option>
-                  <option id="" value="breakfast">Breakfast</option>
-                  <option id="" value="dinner">Dinner</option>
-                  <option id="" value="desert">Desert</option>
-                  <option id="" value="salad">Salad</option>
-                  <option id="" value="savory">Savory</option>
-                  <option id="" value="snacks">Snacks</option>
+                  <option value="Breakfast">Breakfast</option>
+                  <option value="Dinner">Dinner</option>
+                  <option value="Desert">Desert</option>
+                  <option value="Salad">Salad</option>
+                  <option value="Savory">Savory</option>
+                  <option value="Snacks">Snacks</option>
+                  <option value="Drinks">Drinks</option>
                </select>
-               <input type="text" name="filter-text" value="" placeholder="Ingredients" maxlength="50" required class="filter-recipes__input">
             </form>
          </div>
          <section id="recipes-container" class="section-posts">
-            
+
          </section>
 
          <div class="pagination">
@@ -96,7 +98,7 @@
             <button class="pagination__btn">
                <ion-icon name="chevron-forward-outline" class="pagination__icon"></ion-icon>
             </button>
-         </div> 
+         </div>
       </main>
    </div>
    <footer class="footer">

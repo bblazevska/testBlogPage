@@ -57,7 +57,12 @@
       font-weight: 300;
     }
   }
-
+  &__description{
+    width: 80%;
+    max-width: 70rem;
+    padding: 2rem;
+    margin: 0 auto;
+  }
   &__description__text {
     font-size: 1.8rem;
     text-indent: 2rem;
@@ -67,6 +72,7 @@
 
   &__gallery-img {
     &__1 {
+      margin-top: 2rem;
       grid-column: 1/5;
       width: 100%;
     }
@@ -83,7 +89,10 @@
 }
 
 .recipe {
-  
+  & > *{
+  letter-spacing: 1px;
+
+  }
   &__ingredients {
     &--title {
       display: inline-block;
@@ -97,10 +106,14 @@
       margin-bottom: 2rem;
       line-height: 1.45;
       text-indent: 1rem;
+      & > *{
+        margin-bottom: .5rem;
+      }
     }
   }
   &__instructions {
     font-size: 1.8rem;
+    
   }
 }
 

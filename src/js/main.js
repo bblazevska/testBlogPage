@@ -41,18 +41,3 @@ document.addEventListener('click', function (e) {
    console.log(postId);
 })
 
-const getData = function () {
-   
-      let newData;
-      fetch("http://localhost:3000/posts").
-         then(res => res.json()).
-         then(data => generateStoryMarkup(data))
-         .catch(err => new Error(`${err.message}`));
-      return newData;
-   
-   //  throw new Error("Error getting data");
-   
-};
-
-
-

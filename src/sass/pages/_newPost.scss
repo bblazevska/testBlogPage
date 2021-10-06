@@ -2,6 +2,8 @@
    margin-top: 5rem;
    background-color: $color-light-2;
    padding: 3rem;
+   margin-bottom: $section-margin;
+   padding-bottom: 5rem;
 
    &-container{
       width: 80%;
@@ -19,6 +21,9 @@
       margin-bottom: 4rem;
       
       & > *{
+         font-family: inherit;
+         border: none;
+         outline: none;
          &:focus{
             outline: none;
          }
@@ -30,30 +35,71 @@
          color: $color-primary-dark;
       }
       &--input{
-         padding: .5rem;      
-         border: 1px solid $color-text-light;
+         padding: 1rem;      
+         border: 1px solid $color-light-2;
+         &:focus{
+            outline: none;
+            border-bottom: 1px solid $color-text-light;
+         }
       }
       &--select{
          padding: .5rem;
          background-color: #fff;
-         border: 1px solid $color-text-light;
+         color: $color-text-light;
+         border: none;
+         outline: none;
+         border: 1px solid $color-light-2;
       }
       &--btn{
-         width: 30%;
+         color: $color-text-dark;
+         text-decoration: none;
+         font-size: 1.4rem;
+         width: 15rem;
          padding: 2rem;
          text-transform: uppercase;
          border: none;
-         background-color: $color-primary;
+         background-color: $color-primary-light;
          
+      }
+      &--textarea{
+         padding: 1rem;
+      }
+
+      &--add-btn{
+         width: 2.4rem;
+         height: 2.4rem;
+         cursor: pointer;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         color: $color-primary-dark;
+         background-color: transparent;
+         border: none;
+      }
+      &--add-icon{
+         width: 2rem;
+         height: 2rem;
       }
    }
 
+}
+.ingredients-container,
+.toppings-container{
+   display: flex;
+   flex-direction: column;
 }
 
 .multiple{
    margin-bottom: 1rem;
 }
 
-.centered{
+.btn-submit-container{
    text-align: center;
+}
+
+.label-ingredients,
+.label-toppings{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
 }

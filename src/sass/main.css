@@ -60,6 +60,7 @@ body {
 
 .heading-center {
   text-align: center;
+  color: #616063;
 }
 
 .btn {
@@ -164,12 +165,24 @@ body {
   padding: 5rem;
 }
 
+.post__date, .post__category,
+.recipe__date,
+.recipe__category {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
 .post__date,
 .recipe__date {
   font-style: italic;
-  font-size: 1.4rem;
-  font-weight: 300;
   color: #616063;
+}
+
+.post__category,
+.recipe__category {
+  color: #212123;
+  text-transform: capitalize;
+  font-style: normal;
 }
 
 .post__desc,
@@ -474,32 +487,36 @@ body {
 .recipes__text {
   width: 80%;
   margin: 10rem auto;
+  margin-bottom: 5rem;
 }
 
 .recipes__text--content {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   width: 50%;
   font-weight: 300;
   margin-bottom: 3rem;
 }
 
+.filter-recipes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3rem;
+  margin-top: 10rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .filter-recipes__select {
   width: 20rem;
-  height: 2.5rem;
+  height: 3rem;
   border: 1px solid #616063;
-  margin-right: 2rem;
   color: #616063;
 }
 
-.filter-recipes__input {
-  height: 2.5rem;
-  width: 20rem;
-  border: 1px solid #616063;
-  padding: 1rem;
-}
-
-.filter-recipes__input:focus {
-  outline: none;
+.filter-recipes__label {
+  font-size: 1.8rem;
 }
 
 .post__header,
@@ -578,6 +595,13 @@ body {
   font-weight: 300;
 }
 
+.post-view__description {
+  width: 80%;
+  max-width: 70rem;
+  padding: 2rem;
+  margin: 0 auto;
+}
+
 .post-view__description__text {
   font-size: 1.8rem;
   text-indent: 2rem;
@@ -586,6 +610,7 @@ body {
 }
 
 .post-view__gallery-img__1 {
+  margin-top: 2rem;
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-column: 1/5;
@@ -606,6 +631,10 @@ body {
   width: 100%;
 }
 
+.recipe > * {
+  letter-spacing: 1px;
+}
+
 .recipe__ingredients--title {
   display: inline-block;
   font-size: 1.8rem;
@@ -619,6 +648,10 @@ body {
   margin-bottom: 2rem;
   line-height: 1.45;
   text-indent: 1rem;
+}
+
+.recipe__ingredients-list > * {
+  margin-bottom: .5rem;
 }
 
 .recipe__instructions {
@@ -660,6 +693,8 @@ body {
   margin-top: 5rem;
   background-color: #f5f1ef;
   padding: 3rem;
+  margin-bottom: 10rem;
+  padding-bottom: 5rem;
 }
 
 .new-post-container {
@@ -685,6 +720,12 @@ body {
   margin-bottom: 4rem;
 }
 
+.new-post__field > * {
+  font-family: inherit;
+  border: none;
+  outline: none;
+}
+
 .new-post__field > *:focus {
   outline: none;
 }
@@ -696,29 +737,91 @@ body {
 }
 
 .new-post__field--input {
-  padding: .5rem;
-  border: 1px solid #616063;
+  padding: 1rem;
+  border: 1px solid #f5f1ef;
+}
+
+.new-post__field--input:focus {
+  outline: none;
+  border-bottom: 1px solid #616063;
 }
 
 .new-post__field--select {
   padding: .5rem;
   background-color: #fff;
-  border: 1px solid #616063;
+  color: #616063;
+  border: none;
+  outline: none;
+  border: 1px solid #f5f1ef;
 }
 
 .new-post__field--btn {
-  width: 30%;
+  color: #212123;
+  text-decoration: none;
+  font-size: 1.4rem;
+  width: 15rem;
   padding: 2rem;
   text-transform: uppercase;
   border: none;
-  background-color: #a0583c;
+  background-color: #c08267;
+}
+
+.new-post__field--textarea {
+  padding: 1rem;
+}
+
+.new-post__field--add-btn {
+  width: 2.4rem;
+  height: 2.4rem;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #804630;
+  background-color: transparent;
+  border: none;
+}
+
+.new-post__field--add-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.ingredients-container,
+.toppings-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .multiple {
   margin-bottom: 1rem;
 }
 
-.centered {
+.btn-submit-container {
   text-align: center;
+}
+
+.label-ingredients,
+.label-toppings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=main.css.map */

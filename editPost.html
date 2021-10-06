@@ -13,8 +13,8 @@
 
    <link rel="stylesheet" href="./src/sass/main.css">
 
-   <script defer src="./src/js/newPost.js"></script>
-   <title>Create Post | Foody</title>
+   <script defer src="./src/js/editPost.js"></script>
+   <title>Edit Post | Foody</title>
 </head>
 
 <body>
@@ -40,7 +40,8 @@
 
             <div class="navigation__icon-box">
                <a href="newPost.html" class="navigation__link">
-                  <ion-icon name="newspaper-outline" class="navigation__icon navigation__icon__new-post" title="Create new post"></ion-icon>
+                  <ion-icon name="newspaper-outline" class="navigation__icon navigation__icon__new-post"
+                     title="Create new post"></ion-icon>
                   </ion-icon>
                </a>
                <div class="socials">
@@ -58,13 +59,14 @@
          </nav>
       </header>
       <main class="new-post">
-         <h2 class="heading-secondary heading-center">Create New Post</h2>
+         <h2 class="heading-secondary heading-center">Edit Post</h2>
          <div class="new-post-container">
             <div class="new-post-container__post">
 
                <div class="new-post__field">
                   <label for="title" class="new-post__field--label label-title">Post Title</label>
-                  <input type="text" class="new-post__field--input input-title" maxlength="100" placeholder="Title" required>
+                  <input type="text" class="new-post__field--input input-title" maxlength="100" placeholder="Title"
+                     required>
                </div>
                <div class="new-post__field">
                   <label for="title" class="new-post__field--label label-category">Category</label>
@@ -79,73 +81,90 @@
                      <option value="Snacks">Drink</option>
                   </select>
                </div>
-               
+
                <div class="new-post__field">
                   <label for="desc" class="new-post__field--label">Short description</label>
-                  <input type="text" name="desc" class="new-post__field--input input-short-description" maxlength="400" placeholder="Write short description" required>
+                  <input type="text" name="desc" class="new-post__field--input input-short-description" maxlength="400"
+                     placeholder="Write short description" required>
                </div>
                <div class="new-post__field">
                   <label for="desc" class="new-post__field--label label-imgUrl">Image Url</label>
-                  <input type="url" name="desc" class="new-post__field--input input-imgUrl" pattern="https://.*" placeholder="https://example.com"  required>
+                  <input type="url" name="desc" class="new-post__field--input input-imgUrl" pattern="https://.*"
+                     placeholder="https://example.com" required>
                </div>
                <div class="new-post__field">
                   <label for="content" class="new-post__field--label">Content</label>
-                  <textarea name="content" id="content"  class="new-post__field--textarea input-content" cols="30" rows="20" required placeholder="Write story"></textarea>
+                  <textarea name="content" id="content" class="new-post__field--textarea input-content" cols="30"
+                     rows="20" required placeholder="Write story"></textarea>
                </div>
                <div class="new-post__field">
-                  <label for="date" class="new-post__field--label">Date (optional)</label>
-                  <input type="text" name="date" class="new-post__field--input input-date" placeholder="Month day, year" required>
+                  <label for="date" class="new-post__field--label">Date</label>
+                  <input type="text" name="date" class="new-post__field--input input-date" placeholder="Month day, year"
+                     required>
                </div>
                <div class="new-post__field">
                   <label for="images" class="new-post__field--label ">Images</label>
-                  <input type="url" name="images" class="new-post__field--input multiple input-images" pattern="https://.*" maxlength="100" placeholder="https://example.com">
-                  <input type="url" name="images" class="new-post__field--input multiple input-images" pattern="https://.*" maxlength="100" placeholder="https://example.com">
-                  <input type="url" name="images" class="new-post__field--input multiple input-images" pattern="https://.*" maxlength="100" placeholder="https://example.com">
+                  <input type="url" name="images" class="new-post__field--input multiple input-images"
+                     pattern="https://.*" maxlength="100" placeholder="https://example.com">
+                  <input type="url" name="images" class="new-post__field--input multiple input-images"
+                     pattern="https://.*" maxlength="100" placeholder="https://example.com">
+                  <input type="url" name="images" class="new-post__field--input multiple input-images"
+                     pattern="https://.*" maxlength="100" placeholder="https://example.com">
                </div>
             </div>
 
             <div class="new-post-container__recipe">
                <div class="new-post__field">
                   <label for="recipe-title" class="new-post__field--label">Recipe Title</label>
-                  <input type="text" name="recipe-title" class="new-post__field--input input-rtitle" maxlength="100" placeholder="Recipe Title">
+                  <input type="text" name="recipe-title" class="new-post__field--input input-rtitle" maxlength="100"
+                     placeholder="Recipe Title">
                </div>
                <div class="new-post__field">
                   <label for="ingredients" class="new-post__field--label label-ingredients">
                      Ingredients
                      <button class="new-post__field--add-btn   add-btn-ingredient">
-                        <ion-icon id="add-ingredient-input" name="add-outline" class="new-post__field--add-icon "></ion-icon>
+                        <ion-icon id="add-ingredient-input" name="add-outline" class="new-post__field--add-icon ">
+                        </ion-icon>
                      </button>
                   </label>
                   <div class="ingredients-container">
-                     <input type="text" name="ingredients" class="new-post__field--input multiple input-ingredients" maxlength="100" placeholder="Ingredient" required>
-                     <input type="text" name="ingredients" class="new-post__field--input multiple input-ingredients" maxlength="100" placeholder="Ingredient" required>
-                     <input type="text" name="ingredients" class="new-post__field--input multiple input-ingredients" maxlength="100" placeholder="Ingredient" required>
-                     <input type="text" name="ingredients" class="new-post__field--input multiple input-ingredients" maxlength="100" placeholder="Indredient">
+                     <input type="text" name="ingredients" class="new-post__field--input multiple input-ingredients"
+                        maxlength="100" placeholder="Ingredient" required>
+                     <input type="text" name="ingredients" class="new-post__field--input multiple input-ingredients"
+                        maxlength="100" placeholder="Ingredient" required>
+                     <input type="text" name="ingredients" class="new-post__field--input multiple input-ingredients"
+                        maxlength="100" placeholder="Ingredient" required>
+                     <input type="text" name="ingredients" class="new-post__field--input multiple input-ingredients"
+                        maxlength="100" placeholder="Indredient">
                   </div>
                </div>
                <div class="new-post__field">
                   <label for="toppings" class="new-post__field--label label-toppings">
                      Toppings
                      <button class="new-post__field--add-btn add-btn-topping">
-                        <ion-icon id="add-topping-input" name="add-outline" class="new-post__field--add-icon"></ion-icon>
+                        <ion-icon id="add-topping-input" name="add-outline" class="new-post__field--add-icon">
+                        </ion-icon>
                      </button>
                   </label>
                   <div class="toppings-container">
-                     <input type="text" name="toppings" class="new-post__field--input multiple input-toppings" maxlength="100" placeholder="Topping">
-                     <input type="text" name="toppings" class="new-post__field--input multiple input-toppings" maxlength="100" placeholder="Topping">
+                     <input type="text" name="toppings" class="new-post__field--input multiple input-toppings"
+                        maxlength="100" placeholder="Topping">
+                     <input type="text" name="toppings" class="new-post__field--input multiple input-toppings"
+                        maxlength="100" placeholder="Topping">
                      <!-- <input type="text" name="toppings" class="new-post__field--input multiple input-toppings" maxlength="100" placeholder="Topping"> -->
                   </div>
                </div>
                <div class="new-post__field">
                   <label for="instructions" class="new-post__field--label">Instructions</label>
-                  <textarea name="instructions" id="content" class="new-post__field--textarea input-instructions" cols="30" rows="20" required placeholder="How to prepare the recipe"></textarea>
+                  <textarea name="instructions" id="content" class="new-post__field--textarea input-instructions"
+                     cols="30" rows="20" required placeholder="How to prepare the recipe"></textarea>
                </div>
             </div>
          </div>
          <div class="btn-submit-container">
-            <button type="submit" class="new-post__field--btn btn-submit centered">Add Post</button>
+            <button type="submit" class="new-post__field--btn btn-submit centered">Post Edit</button>
          </div>
-         
+
       </main>
    </div>
    <footer class="footer">
