@@ -73,9 +73,4 @@ fetch(`http://localhost:3000/posts/${id}`)
 btnEditPost.addEventListener('click', function (e) {
    e.preventDefault();
    window.location = `http://localhost:5500/editPost.html?id=${id}`;
-   // const link = e.target.closest('.icon__link');
-   // link.href = `http://localhost:5500/editPost.html?id=${id}`;
-   // console.log(link);
-   // console.log(link.href);
-   
 });

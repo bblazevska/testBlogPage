@@ -43,7 +43,7 @@ body {
 
 .heading-post,
 .heading-recipe {
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 300;
   margin-bottom: 1rem;
 }
@@ -574,7 +574,7 @@ body {
 }
 
 .recipe__description {
-  height: 20rem;
+  height: 22rem;
 }
 
 .post-view__img {
@@ -651,7 +651,7 @@ body {
 }
 
 .recipe__ingredients-list > * {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .recipe__instructions {

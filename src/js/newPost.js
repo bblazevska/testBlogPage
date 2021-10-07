@@ -7,13 +7,13 @@ const inputContent = document.querySelector('.input-content');
 const inputDate = document.querySelector('.input-date');
 const inputImages = document.querySelectorAll('.input-images');
 const inputRecipeTitle = document.querySelector('.input-rtitle')
-const inputIngredients = document.querySelectorAll('.input-ingredients');
-const inputToppings = document.querySelectorAll('.input-toppings');
+let inputIngredients = document.querySelectorAll('.input-ingredients');
+let inputToppings = document.querySelectorAll('.input-toppings');
 const inputInstructions = document.querySelector('.input-instructions');
 const btnSubmit = document.querySelector('.btn-submit');
 const btnAddIngredient = document.querySelector(".add-btn-ingredient");
 const btnAddTopping = document.querySelector(".add-btn-topping");
-
+const newPostForm = document.querySelector('.new-post-form');
 let date = new Date();
 date = date.toDateString().split(" ").splice(1).join(" ");
 
@@ -67,7 +67,7 @@ const uploadPost = function (newPost) {
 
 const handleSubmit = function (e) {
     e.preventDefault();
-
+  console.log(e.target);
     const newPost = {
       id:  generateUniqueId(),
       title: inputTitle.value,
@@ -87,22 +87,31 @@ const handleSubmit = function (e) {
 
     uploadPost(newPost);
 }
+let numIng = inputIngredients.length;
+console.log(numIng);
 const addInput = function (e) {
-    let inputHtml;
-    if (e.target.id === "add-ingredient-input") {
+  let inputHtml;
+ 
+  if (e.target.id === "add-ingredient-input") {
       inputHtml =
         '<input type="text" name="ingredients" class="new-post__field--input multiple input-ingredients" maxlength="100" placeholder="Indredient" required>';
       document
         .querySelector(".ingredients-container")
-        .insertAdjacentHTML("beforeend", inputHtml);
+      .insertAdjacentHTML("beforeend", inputHtml);
+    inputIngredients = document.querySelectorAll(".input-ingredients");
+    console.log(inputIngredients);
     } else if (e.target.id === "add-topping-input") {
       inputHtml =
         '<input type="text" name="toppings" class="new-post__field--input multiple input-toppings" maxlength="100" placeholder="Topping" required>';
       document
         .querySelector(".toppings-container")
-        .insertAdjacentHTML("beforeend", inputHtml);
+      .insertAdjacentHTML("beforeend", inputHtml);
+    inputToppings= document.querySelectorAll(".input-toppings");
     }
 }
 
 btnSubmit.addEventListener('click', handleSubmit);
+  console.log(btnAddTopping);
 [btnAddIngredient, btnAddTopping].forEach(btn => btn.addEventListener('click', addInput));
+// btnAddIngredient.addEventListener('click',addInput)
+// newPostForm.addEventListener('submit', handleSubmit)

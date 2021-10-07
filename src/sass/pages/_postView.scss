@@ -13,7 +13,7 @@
     padding: 2rem;
     margin: 0 auto;
   }
-  &__description{
+  &__description {
     height: 31.8rem;
     font-style: italic;
     letter-spacing: 1px;
@@ -37,8 +37,8 @@
     margin-bottom: $section-margin;
   }
 }
-.recipe__description{
-  height: 20rem;
+.recipe__description {
+  height: 22rem;
 }
 .post-view {
   &__img {
@@ -57,7 +57,7 @@
       font-weight: 300;
     }
   }
-  &__description{
+  &__description {
     width: 80%;
     max-width: 70rem;
     padding: 2rem;
@@ -89,9 +89,8 @@
 }
 
 .recipe {
-  & > *{
-  letter-spacing: 1px;
-
+  & > * {
+    letter-spacing: 1px;
   }
   &__ingredients {
     &--title {
@@ -106,43 +105,40 @@
       margin-bottom: 2rem;
       line-height: 1.45;
       text-indent: 1rem;
-      & > *{
-        margin-bottom: .5rem;
+      & > * {
+        margin-bottom: 0.5rem;
       }
     }
   }
   &__instructions {
     font-size: 1.8rem;
-    
   }
 }
 
-
-.edit{
-  &-icon-container{
+.edit {
+  &-icon-container {
     display: inline-block;
     width: 5.5rem;
     height: 5.5rem;
     border-radius: 50%;
-    background-color: $color-primary-light;  
+    background-color: $color-primary-light;
     display: flex;
     justify-content: center;
     align-items: center;
 
     position: fixed;
     right: 10%;
-    bottom: 7%
+    bottom: 7%;
   }
-  
-  &__icon{
+
+  &__icon {
     width: 3rem;
     height: 3rem;
     fill: $color-text-dark;
-    
   }
 }
 
-.icon__link{
-    color: $color-text-dark;
-    text-decoration: none;
-  }
+.icon__link {
+  color: $color-text-dark;
+  text-decoration: none;
+}
