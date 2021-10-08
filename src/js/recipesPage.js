@@ -1,10 +1,11 @@
 console.log('Recipes Page');
 let btnRead;
 let allPosts = [];
-
+let curPage = 1;
 const recipesContainer = document.querySelector("#recipes-container");
 const searchSelect = document.querySelector(".filter-recipes__select");
-
+const paginationContainer = document.querySelector('.pagination');
+const btnLoadMore = document.querySelector(".btn__load-more");
 
 const generateRecipeCard = function (data) {
   console.log(data.recipe,data.id);
@@ -21,28 +22,15 @@ const generateRecipeCard = function (data) {
          </figure>
       </div>
    `;
-  recipesContainer.insertAdjacentHTML("afterbegin", html);
+  recipesContainer.insertAdjacentHTML("beforeend", html);
 };
-
-// const renderData = function (url) {
-//    fetch(url)
-//    .then((res) => res.json())
-//    .then((data) => {
-//       data.forEach((post) => {
-//          recipesContainer.innerHTML = '';
-//          generateRecipeCard(post);
-//       })
-//    }
-//    )
-//    .catch((err) => new Error(`${err.message}`));
-// }
-
 
 const renderSearchResults = function(e){
    const cat = e.target.value;
+   curPage = 1
    console.log(cat);
    if (cat !== "") {
-      fetch(`http://localhost:3000/posts?_page=1&_limit=9&category=${cat}`)
+      fetch(`http://localhost:3000/posts?_page=${curPage}&_limit=9&category=${cat}`)
          .then((res) => res.json())
          .then((data) => {
             console.log(data);
@@ -57,28 +45,38 @@ const renderSearchResults = function(e){
 }
 
 
-const getData = async function (pageNum = 1) {
+const getData = async function () {
   const res = await fetch(
-    `http://localhost:3000/posts?_page=${pageNum}&_limit=9`
+    `http://localhost:3000/posts?_page=${curPage}&_limit=6`
   );
   console.log(res);
   if (!res.ok) throw new Error(`Error loading data (${res.status})`);
   const data = await res.json();
-  console.log(data);
+   console.log(data);
+   
    data.map((post) => {
       console.log(post);
       generateRecipeCard(post)
    });
 };
 
-const handleLoadData = function (pageNum = 1) {
-  try {
-    getData(pageNum);
+const handleLoadData = function () {
+   try {
+   recipesContainer.innerHTML = "";
+    getData();
   } catch (err) {
     console.error(err);
   }
 };
 
+const handleLoadMore = function (e) {
+   e.preventDefault();
+   curPage++;
+   getData();
+}
+
 window.addEventListener("load", handleLoadData);
 
-// searchSelect.addEventListener('change', renderSearchResults);
+searchSelect.addEventListener('change', renderSearchResults);
+
+btnLoadMore.addEventListener('click', handleLoadMore);

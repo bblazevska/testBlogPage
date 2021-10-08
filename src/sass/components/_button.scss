@@ -5,16 +5,27 @@
    text-transform: uppercase;
    border: none;
    cursor: pointer;
+   border-radius: 3px;
 
    &__post{
-      color: $color-text-light;
-      border: 1px solid $color-light-2; 
-      border-radius: 2px;
+      color: $color-text-dark;
+      border: 1px solid $color-light; 
       font-size: 1.1rem;
       position: absolute;
       bottom: 3rem;
       right: 9.5rem;
       text-decoration: none;
       font-weight: 400;
+
+      &:hover{
+         background-color: $color-primary-light;
+         color: $color-light-2;
+      }
+   }
+   &__load-more{
+      background-color: $color-primary-light;
+      color: $color-light-2;
+      padding-bottom: 1.5rem;
+      
    }
 }

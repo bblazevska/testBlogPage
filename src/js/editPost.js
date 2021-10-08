@@ -8,8 +8,8 @@ const inputContent = document.querySelector(".input-content");
 const inputDate = document.querySelector(".input-date");
 const inputImages = document.querySelectorAll(".input-images");
 const inputRecipeTitle = document.querySelector(".input-rtitle");
-const inputIngredients = document.querySelectorAll(".input-ingredients");
-const inputToppings = document.querySelectorAll(".input-toppings");
+let inputIngredients = document.querySelectorAll(".input-ingredients");
+let inputToppings = document.querySelectorAll(".input-toppings");
 const inputInstructions = document.querySelector(".input-instructions");
 const btnSubmit = document.querySelector(".btn-submit");
 const btnAddIngredient = document.querySelector(".add-btn-ingredient");
@@ -18,6 +18,30 @@ const btnPostEdit = document.querySelector(".btn-submit");
 
 const postId = window.location.href.split("=")[1];
 console.log(postId);
+
+
+
+const addInput = function (e) {
+  let inputHtml;
+
+  if (e.target.id === "add-ingredient-input") {
+    inputHtml =
+      '<input type="text" name="ingredients" class="new-post__field--input multiple input-ingredients" maxlength="100" placeholder="Indredient" required>';
+    document
+      .querySelector(".ingredients-container")
+      .insertAdjacentHTML("beforeend", inputHtml);
+    inputIngredients = document.querySelectorAll(".input-ingredients");
+    console.log(inputIngredients);
+  } else if (e.target.id === "add-topping-input") {
+    inputHtml =
+      '<input type="text" name="toppings" class="new-post__field--input multiple input-toppings" maxlength="100" placeholder="Topping" required>';
+    document
+      .querySelector(".toppings-container")
+      .insertAdjacentHTML("beforeend", inputHtml);
+    inputToppings = document.querySelectorAll(".input-toppings");
+  }
+};
+
 const imagesArr = Array.from(inputImages);
 const ingredientsArr = Array.from(inputIngredients);
 const toppingsArr = Array.from(inputToppings);
@@ -87,5 +111,9 @@ fetch(`http://localhost:3000/posts/${postId}`)
     populateData(data);
   })
   .catch((err) => console.log(new Error(`${err.message}`)));
+
+[btnAddIngredient, btnAddTopping].forEach((btn) =>
+  btn.addEventListener("click", addInput)
+);
 
 btnPostEdit.addEventListener("click", updatePost);

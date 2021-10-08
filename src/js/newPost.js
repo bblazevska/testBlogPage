@@ -14,18 +14,19 @@ const btnSubmit = document.querySelector('.btn-submit');
 const btnAddIngredient = document.querySelector(".add-btn-ingredient");
 const btnAddTopping = document.querySelector(".add-btn-topping");
 const newPostForm = document.querySelector('.new-post-form');
+
 let date = new Date();
 date = date.toDateString().split(" ").splice(1).join(" ");
 
+// Getting the errors
 const errors = [];
-const getErrors =  function(){
+const getErrors =  async function(){
     try{
+      const res = await fetch("http://localhost:3000/errors");
+      if (!res.ok) throw new Error('Unexpected error');
 
-        fetch('localhost:3000/errors')
-        .then(res => res.json())
-        .then(data => console.log(data)
-        )
-        .catch(err => new Error(`${err.message}`));
+      const data = await res.json();
+      data.forEach(d => errors.push(d))
         
     }catch(err){
         console.error(err);
@@ -33,6 +34,7 @@ const getErrors =  function(){
     
 }
 getErrors();
+console.log(errors);
 
 
 const generateUniqueId = () => { return Date.now() };
@@ -53,40 +55,16 @@ const uploadPost = function (newPost) {
     })
       .then((response) => response.json())
         .then((data) => {
-          console.log(data);
-        console.log("Success:", data);
         window.location = `/postView.html?id=${data.id}`;
       })
       .catch((error) => {
         console.error("Error:", error);
-        alert(error);
       });
     clearInputs();
 }
 
 
-const handleSubmit = function (e) {
-    e.preventDefault();
-  console.log(e.target);
-    const newPost = {
-      id:  generateUniqueId(),
-      title: inputTitle.value,
-      category: selectCategory.value,
-      description: inputShortDescription.value,
-      imageUrl: inputImgUrl.value,
-      content: inputContent.value,
-      date: inputDate.value !== '' ? inputDate.value : date ,
-      images: Array.from(inputImages).map((inp) => inp.value),
-        recipe: {
-            rtitle: inputRecipeTitle.value,
-            ingredients: Array.from(inputIngredients).map((inp) => inp.value),
-            toppings: Array.from(inputToppings).map((inp) => inp.value),
-            instructions: inputInstructions.value,
-        }    
-    };
 
-    uploadPost(newPost);
-}
 let numIng = inputIngredients.length;
 console.log(numIng);
 const addInput = function (e) {
@@ -109,9 +87,35 @@ const addInput = function (e) {
     inputToppings= document.querySelectorAll(".input-toppings");
     }
 }
+const handleSubmit = function (e) {
+  e.preventDefault();
+  const newPost = {
+    id: generateUniqueId(),
+    title: inputTitle.value.length < 10 || inputTitle.value ==='' ? alert(errors[1].fields.title) : inputTitle.value,
+    category: selectCategory.value,
+    description: inputShortDescription.value,
+    imageUrl: inputImgUrl.value === '' ? alert(errors[1].fields.imageUrl) : inputImgUrl.value,
+    content: inputContent.value,
+    date: inputDate.value !== "" ? inputDate.value : date,
+    images: Array.from(inputImages).map((inp) => inp.value),
+    recipe: {
+      rtitle: inputRecipeTitle.value,
+      ingredients: Array.from(inputIngredients).map((inp) => inp.value),
+      toppings: Array.from(inputToppings).map((inp) => inp.value),
+      instructions: inputInstructions.value,
+    },
+  };
 
-btnSubmit.addEventListener('click', handleSubmit);
+  uploadPost(newPost);
+};
+
+
+//Events
+// btnSubmit.addEventListener('click', handleSubmit);
   console.log(btnAddTopping);
 [btnAddIngredient, btnAddTopping].forEach(btn => btn.addEventListener('click', addInput));
+
+
 // btnAddIngredient.addEventListener('click',addInput)
-// newPostForm.addEventListener('submit', handleSubmit)
+
+newPostForm.addEventListener('submit', handleSubmit)

@@ -39,7 +39,7 @@
             </ul>
 
             <div class="navigation__icon-box">
-               <a href="newPost.html" class="navigation__link">
+               <a href="newPost.html" class="icon__link">
                   <ion-icon name="newspaper-outline" class="navigation__icon navigation__icon__new-post" title="Create new post"></ion-icon>
                   </ion-icon>
                </a>
@@ -57,12 +57,11 @@
             </div>
          </nav>
       </header>
-      <main class="new-post">
+      <main class="new-post" id="new-post-page">
          <h2 class="heading-secondary heading-center">Create New Post</h2>
-         <!-- <form class="new-post-form"> -->
+         <form class="new-post-form">
          <div class="new-post-container">
             <div class="new-post-container__post">
-
                <div class="new-post__field">
                   <label for="title" class="new-post__field--label label-title">Post Title</label>
                   <input type="text" class="new-post__field--input input-title" maxlength="100" placeholder="Title" required>
@@ -77,7 +76,8 @@
                      <option value="Salad">Salad</option>
                      <option value="Savory">Savory</option>
                      <option value="Snacks">Snacks</option>
-                     <option value="Snacks">Drink</option>
+                     <option value="Drink">Drink</option>
+                     <option value="Cake">Cake</option>
                   </select>
                </div>
                
@@ -121,7 +121,6 @@
                      <input type="text" name="ingredients" class="new-post__field--input multiple input-ingredients" maxlength="100" placeholder="Ingredient" required>
                      <input type="text" name="ingredients" class="new-post__field--input multiple input-ingredients" maxlength="100" placeholder="Ingredient" required>
                      <input type="text" name="ingredients" class="new-post__field--input multiple input-ingredients" maxlength="100" placeholder="Ingredient" required>
-                     <input type="text" name="ingredients" class="new-post__field--input multiple input-ingredients" maxlength="100" placeholder="Indredient">
                   </div>
                </div>
                <div class="new-post__field">
@@ -132,9 +131,7 @@
                      </button>
                   </label>
                   <div class="toppings-container">
-                     <input type="text" name="toppings" class="new-post__field--input multiple input-toppings" maxlength="100" placeholder="Topping">
-                     <input type="text" name="toppings" class="new-post__field--input multiple input-toppings" maxlength="100" placeholder="Topping">
-                     <!-- <input type="text" name="toppings" class="new-post__field--input multiple input-toppings" maxlength="100" placeholder="Topping"> -->
+                     
                   </div>
                </div>
                <div class="new-post__field">
@@ -146,7 +143,7 @@
          <div class="btn-submit-container">
             <button type="submit" class="new-post__field--btn btn-submit centered">Add Post</button>
          </div>
-         <!-- </form> -->
+         </form>
       </main>
    </div>
    <footer class="footer">
