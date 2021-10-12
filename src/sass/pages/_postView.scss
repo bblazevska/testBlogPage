@@ -122,6 +122,7 @@
     height: 5.5rem;
     border-radius: 50%;
     background-color: $color-primary-light;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -134,11 +135,11 @@
   &__icon {
     width: 3rem;
     height: 3rem;
-    fill: $color-text-dark;
+    fill: $color-light-2;
   }
 }
 
 .icon__link {
-  color: $color-text-dark;
+  color: $color-light-2;
   text-decoration: none;
 }

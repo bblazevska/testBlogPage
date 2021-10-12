@@ -95,7 +95,7 @@
                </div>
                <div class="new-post__field">
                   <label for="date" class="new-post__field--label">Date (optional)</label>
-                  <input type="text" name="date" class="new-post__field--input input-date" placeholder="Month day, year" required>
+                  <input type="text" name="date" class="new-post__field--input input-date" placeholder="Month day, year">
                </div>
                <div class="new-post__field">
                   <label for="images" class="new-post__field--label ">Images</label>
@@ -118,9 +118,21 @@
                      </button>
                   </label>
                   <div class="ingredients-container">
-                     <input type="text" name="ingredients" class="new-post__field--input multiple input-ingredients" maxlength="100" placeholder="Ingredient" required>
-                     <input type="text" name="ingredients" class="new-post__field--input multiple input-ingredients" maxlength="100" placeholder="Ingredient" required>
-                     <input type="text" name="ingredients" class="new-post__field--input multiple input-ingredients" maxlength="100" placeholder="Ingredient" required>
+                     <div class="new-post__input-container" id="ing-0">
+                        <input type="text" name="ingredients" class="new-post__field--input multiple input-ingredients" maxlength="100" placeholder="Ingredient" required>
+                        <button class="new-post__field--delete-btn   delete-btn-input">
+                           <ion-icon id="delete-ingredient-input" name="close-outline" class="new-post__field--close-icon "></ion-icon>
+                        </button>
+                     </div>
+                     <div class="new-post__input-container"
+                     id="ing-1">
+                        <input type="text" name="ingredients" class="new-post__field--input multiple input-ingredients" maxlength="100"
+                           placeholder="Ingredient" required>
+                     
+                        <button class="new-post__field--delete-btn   delete-btn-input">
+                           <ion-icon id="delete-ingredient-input" name="close-outline" class="new-post__field--close-icon "></ion-icon>
+                        </button>
+                     </div>
                   </div>
                </div>
                <div class="new-post__field">

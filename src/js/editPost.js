@@ -19,32 +19,60 @@ const btnPostEdit = document.querySelector(".btn-submit");
 const postId = window.location.href.split("=")[1];
 console.log(postId);
 
+// Getting the errors
+const errors = [];
+const getErrors =  async function(){
+    try{
+      const res = await fetch("http://localhost:3000/errors");
+      if (!res.ok) throw new Error('Unexpected error');
 
+      const data = await res.json();
+      data.forEach(d => errors.push(d))
+        
+    }catch(err){
+        console.error(err);
+    }
+    
+}
+getErrors();
 
 const addInput = function (e) {
   let inputHtml;
 
   if (e.target.id === "add-ingredient-input") {
-    inputHtml =
-      '<input type="text" name="ingredients" class="new-post__field--input multiple input-ingredients" maxlength="100" placeholder="Indredient" required>';
+    inputHtml = `<div class="new-post__input-container" id="ing-${numIng}">
+            <input type="text" name="ingredients" class="new-post__field--input multiple input-ingredients" maxlength="100" placeholder="Ingredient" required>
+            <button class="new-post__field--delete-btn delete-btn-input">
+              <ion-icon id="delete-ingredient-input" name="close-outline" class="new-post__field--close-icon "></ion-icon>
+            </button>
+          </div>`;
     document
       .querySelector(".ingredients-container")
       .insertAdjacentHTML("beforeend", inputHtml);
     inputIngredients = document.querySelectorAll(".input-ingredients");
     console.log(inputIngredients);
+    numIng++;
   } else if (e.target.id === "add-topping-input") {
-    inputHtml =
-      '<input type="text" name="toppings" class="new-post__field--input multiple input-toppings" maxlength="100" placeholder="Topping" required>';
+    inputHtml = `
+        <div class="new-post__input-container" id="topping-${numToppings}">
+            <input type="text" name="toppings" class="new-post__field--input multiple input-toppings" maxlength="100" placeholder="Topping" required>
+            <button class="new-post__field--delete-btn delete-btn-input">
+                <ion-icon id="delete-ingredient-input" name="close-outline" class="new-post__field--close-icon "></ion-icon>
+            </button>
+        </div>`;
     document
       .querySelector(".toppings-container")
       .insertAdjacentHTML("beforeend", inputHtml);
     inputToppings = document.querySelectorAll(".input-toppings");
+    numToppings++;
   }
 };
 
 const imagesArr = Array.from(inputImages);
 const ingredientsArr = Array.from(inputIngredients);
 const toppingsArr = Array.from(inputToppings);
+let numIng = ingredientsArr.length;
+let numToppings = toppingsArr.length;
 
 const populateData = function (data) {
   inputTitle.value = data.title;
@@ -64,14 +92,47 @@ const populateData = function (data) {
   inputInstructions.value = data.recipe.instructions;
 };
 
+const uploadData = function(data){
+  fetch(`http://localhost:3000/posts/${postId}`, {
+    method: "PATCH",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data),
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data);
+      console.log("Success:", data);
+      window.location = `/postView.html?id=${data.id}`;
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+      alert(error);
+    });
+}
+const validateInputs = function () {
+  if (inputTitle.value.length < 10 || inputTitle.value === "") {
+    alert(errors[1].fields.title)
+    inputTitle.focus();
+  } else {
+    return inputTitle.value;
+  }
+
+  if (inputImgUrl.pattern !== 'https://.*') {
+    alert(errors[1](errors[1].fields.imageUrl));
+    inputImgUrl.focus();
+  } else return inputImgUrl.value;
+}
+
 const updatePost = function (e) {
   e.preventDefault();
   const editedPost = {
     id: postId,
-    title: inputTitle.value,
+    title: validateInputs(),
     category: selectCategory.value,
     description: inputShortDescription.value,
-    imageUrl: inputImgUrl.value,
+    imageUrl: validateInputs(),
     content: inputContent.value,
     date: inputDate.value !== "" ? inputDate.value : date,
     images: Array.from(inputImages).map((inp) => inp.value),
@@ -84,24 +145,8 @@ const updatePost = function (e) {
   };
 
   console.log(editedPost);
-  fetch(`http://localhost:3000/posts/${postId}`, {
-    method: "PATCH",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(editedPost),
-  })
-    .then((response) => response.json())
-    .then((data) => {
-      console.log(data);
-      console.log("Success:", data);
-      window.location = `/postView.html?id=${data.id}`;
-    })
-    .catch((error) => {
-      console.error("Error:", error);
-      alert(error);
-    });
-  //  window.location = `http://localhost:5500/postView.html?id=${postId}`;
+  
+  
 };
 
 fetch(`http://localhost:3000/posts/${postId}`)
