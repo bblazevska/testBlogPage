@@ -53,13 +53,12 @@
           "3 eggs (size M or L)",
           "250g gluten-free flour mixture (or rice flour or buckwheat flour)",
           " 2 tsp baking powder",
-          "50g butter",
-          "3 tbsp sugar (or maple syrup)",
-          " 1 pinch of salt",
-          "about 300ml milk or plant milk (we used soy milk)",
-          "coconut oil or butter for greasing the waffle iron"
+          "50g butter"
         ],
-        "toppings": [],
+        "toppings": [
+          "undefined",
+          "undefined"
+        ],
         "instructions": "For the waffles, separate the eggs and beat the egg whites for 30-60 seconds until stiff. Melt the butter, let it cool down briefly, then add the milk. Mix gluten-free flour, baking powder and salt. Beat the egg yolks with the sugar for 30 seconds, then fold in the butter-milk mixture. Mix in the flour mixture in 2 portions with a whisk – the dough should not be too runny or too firm. Finally, fold in the egg whites in 2-3 portions with a silicone spatula. Preheat and grease the waffle iron, then fry the waffle batter in portions."
       }
     },
@@ -143,8 +142,7 @@
         ],
         "toppings": [
           "3 egg whites",
-          "80g sugar (preferably fine sugar)",
-          "1 pinch of salt"
+          "80g sugar (preferably fine sugar)"
         ],
         "instructions": "Preheat the oven to 180°C/360°F top and bottom heat. Line the bottom of the springform pan with baking paper, butter and flour the sides. Mix gluten-free flour with baking powder, sugar and salt, then add the soft butter in small pieces and knead everything, add the egg and continue kneading. If the pastry is too crumbly or dry, add 1-2 tablespoons of cold water. Spread the pastry thinly on the bottom and edge of the springform pan and press it on with your fingers. For the filling, mix all the ingredients except the cornstarch in a mixing bowl with the electric whisk, then beat in the cornstarch. Pour the filling into the springform pan and bake the gluten-free cheesecake for 50 minutes, beat the egg whites with the salt semi-stiff just before the end of the baking time, then gradually add the sugar and beat until stiff for 1-2 minutes. Take the cheesecake out of the oven, turn the oven temperature down to 160°C/360°F. Spread the meringue evenly on the cheesecake, leaving 1cm free from the edge as the meringue will expand while baking. Bake the gluten-free cheesecake with meringue for another 15-20 minutes until the meringue turns golden brown. Let the gluten-free cheesecake with meringue cool down for at least 1 hour before serving."
       }
@@ -318,31 +316,6 @@
           "undefined400g frozen berries (raspberries, blueberries…)"
         ],
         "instructions": "Blend rice flour, sugar and salt in a mixing bowl. Cut the cold butter in small cubes, add to the flour mix and knead in for 1 minute, then knead in the egg. Add tablespoon by tablespoon of cold water to make the pastry more smooth, then flatten the pastry with your hands, wrap it in clingfilm and leave in the fridge for 1 hour (or longer). Meanwhile peel and decore the apples, then cut them in thin wedges and sprinkle the lemon juice on them. Add the frozen berries. Blend the cane sugar, cornstarch and vanilla and mix thoroughly with the the fruits. Grease and flour the tart pan. Preheat the oven to 200°C top/bottom heat. After the cooling time roll out the pastry: take two thirds of the pastry from the fridge, knead it a bit smoother and roll it thin out on a floured baking paper (flour the top as well). Place the tart pan upside down on the pastry and flip again together with the pastry and baking paper, so the pastry is falling in the tart pan – remove the baking paper and press the pastry on the tart pan cut off the excess parts. Prick the bottom several times with a fork and fill in the fruit filling as evenly as possible.  Then take the pastry leftovers out of the fridge, knead it and roll out as the other pastry before and cut out the pastry stripes and decorate your pie with the pastry. Strengthen your crust at the sides with some leftover pastry, if you want. In the end whisk an egg and brush the pastry with it. Then sprinkle the 1 tbsp cane sugar on the pastry top. Bake the gluten-free apple-berry-pie for 40-45 minutes until the pastry turned golden brown (if the pastry is getting burned too quickly, just place a piece of tinfoil on top). Let the gluten-free apple-berry-pie rest for 30 minutes before you serve it."
-      }
-    },
-    {
-      "id": 1634030707167,
-      "title": "Test",
-      "category": "Salad",
-      "description": "avd",
-      "imageUrl": "https://ourfoodstories.com/wp-content/uploads/2021/05/Becks-Cocoa-04-933x1400.jpg",
-      "content": "Test story ",
-      "date": "Oct 12 2021",
-      "images": [
-        "",
-        "",
-        ""
-      ],
-      "recipe": {
-        "rtitle": "Recipe Title",
-        "ingredients": [
-          "ing",
-          "ing"
-        ],
-        "toppings": [
-          "toping"
-        ],
-        "instructions": "This is how you prepare this recipe"
       }
     }
   ],

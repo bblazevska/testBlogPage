@@ -39,3 +39,14 @@
       bottom: 1px;
    }
 }
+
+.error-message-title,
+.error-message-image{
+   display: none;
+   color: red;
+   font-size: 1.4rem;
+
+}
+.error-active{
+   display: block;
+}

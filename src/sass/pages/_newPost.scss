@@ -30,16 +30,7 @@
          &:focus{
             outline: none;
          }
-         &:required{
-            &:invalid{
-
-               border-bottom: 1px solid red;
-               &::after{
-                  content: 'Please enter valid data';
-                  color: red;
-               }
-            }
-         }
+        
       }
 
      
@@ -68,7 +59,7 @@
          border: 1px solid $color-light-2;
       }
       &--btn{
-         color: $color-text-dark;
+         color: $color-light-2;
          text-decoration: none;
          font-size: 1.4rem;
          width: 15rem;
@@ -94,9 +85,7 @@
          color: $color-primary-dark;
          background-color: transparent;
          border: none;
-         // &:hover{
-
-         // }
+      
       }
       &--add-icon,
       &--close-icon{
@@ -129,6 +118,7 @@
 
 .btn-submit-container{
    text-align: center;
+   
 }
 
 .label-ingredients,

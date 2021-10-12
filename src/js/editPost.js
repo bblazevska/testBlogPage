@@ -119,7 +119,7 @@ const validateInputs = function () {
     return inputTitle.value;
   }
 
-  if (inputImgUrl.pattern !== 'https://.*') {
+  if (inputImgUrl.pattern !== 'https://.*' ||inputImgUrl === '') {
     alert(errors[1](errors[1].fields.imageUrl));
     inputImgUrl.focus();
   } else return inputImgUrl.value;
@@ -127,12 +127,13 @@ const validateInputs = function () {
 
 const updatePost = function (e) {
   e.preventDefault();
+  if (!validateData()) return;
   const editedPost = {
     id: postId,
-    title: validateInputs(),
+    title: inputTitle.value,
     category: selectCategory.value,
     description: inputShortDescription.value,
-    imageUrl: validateInputs(),
+    imageUrl: inputImgUrl.value,
     content: inputContent.value,
     date: inputDate.value !== "" ? inputDate.value : date,
     images: Array.from(inputImages).map((inp) => inp.value),
@@ -141,12 +142,11 @@ const updatePost = function (e) {
       ingredients: Array.from(inputIngredients).map((inp) => inp.value),
       toppings: Array.from(inputToppings).map((inp) => inp.value),
       instructions: inputInstructions.value,
-    },
+    }
   };
+  uploadData(editedPost)
 
-  console.log(editedPost);
-  
-  
+  console.log(editedPost); 
 };
 
 fetch(`http://localhost:3000/posts/${postId}`)

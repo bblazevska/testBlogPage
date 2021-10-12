@@ -16,6 +16,9 @@ const btnAddTopping = document.querySelector(".add-btn-topping");
 const newPostForm = document.querySelector('.new-post-form');
 let deleteBtnInput = document.querySelectorAll(".delete-btn-ingredient");
 
+const errorMessageTitle = document.querySelector('.error-message-title');
+const errorMessageImage = document.querySelector(".error-message-image");
+
 let date = new Date();
 date = date.toDateString().split(" ").splice(1).join(" ");
 
@@ -77,7 +80,7 @@ const addInput = function (e) {
   if (e.target.id === "add-ingredient-input") {
       inputHtml =
         `<div class="new-post__input-container" id="ing-${numIng}">
-            <input type="text" name="ingredients" class="new-post__field--input multiple input-ingredients" maxlength="100" placeholder="Ingredient" required>
+            <input type="text" name="ingredients" class="new-post__field--input multiple input-ingredients" maxlength="100" placeholder="Ingredient">
             <button class="new-post__field--delete-btn delete-btn-input">
               <ion-icon id="delete-ingredient-input" name="close-outline" class="new-post__field--close-icon "></ion-icon>
             </button>
@@ -92,7 +95,7 @@ const addInput = function (e) {
     } else if (e.target.id === "add-topping-input") {
     inputHtml = `
         <div class="new-post__input-container" id="topping-${numToppings}">
-            <input type="text" name="toppings" class="new-post__field--input multiple input-toppings" maxlength="100" placeholder="Topping" required>
+            <input type="text" name="toppings" class="new-post__field--input multiple input-toppings" maxlength="100" placeholder="Topping" >
             <button class="new-post__field--delete-btn delete-btn-input">
                 <ion-icon id="delete-ingredient-input" name="close-outline" class="new-post__field--close-icon "></ion-icon>
             </button>
@@ -118,8 +121,8 @@ const deleteInput = function (e) {
     deletedEl = document.querySelector(`#${clickedInputID}`);
     console.log(deletedEl);
     document.querySelector('.ingredients-container').removeChild(deletedEl);
-    inputIngredients = document.querySelectorAll('.input-ingredients');
-    deleteBtnInput = document.querySelectorAll(".delete-btn-input");
+    // inputIngredients = document.querySelectorAll('.input-ingredients');
+    // deleteBtnInput = document.querySelectorAll(".delete-btn-input");
     numIng--;
     console.log(inputIngredients);
   } else if (e.target.id === 'delete-topping-input') {
@@ -129,7 +132,8 @@ const deleteInput = function (e) {
 
 const validateData = function () {
   if (inputTitle.value.length < 10 || inputTitle.value === '') {
-    alert(errors[1].fields.title);
+    errorMessageTitle.classList.toggle('error-active');
+    errorMessageTitle.innerText = `${errors[1].fields.title}`
     inputTitle.focus();
     return false;
   }
@@ -138,42 +142,44 @@ const validateData = function () {
     selectCategory.focus();
     return false;
   }
-  if (inputImgUrl.value === '') {
-    alert(errors[1].fields.imageUrl);
+  if (inputImgUrl.value === '' || inputImgUrl.pattern !== 'https//.*') {
+    errorMessageImage.classList.toggle("error-active");
+    errorMessageImage.innerText = `${errors[1].fields.imageUrl}`;
     inputImgUrl.focus();
     return false;
   }
 
-  
+  return true;
 }
 
 const handleSubmit = function (e) {
   e.preventDefault();
-  if (validateData) {
-    const newPost = {
-      id: generateUniqueId(),
-      title:  inputTitle.value,
-      category: selectCategory.value,
-      description: inputShortDescription.value,
-      imageUrl: inputImgUrl.value,
-      content: inputContent.value,
-      date: inputDate.value !== "" ? inputDate.value : date,
-      images: Array.from(inputImages).map((inp) => inp.value),
-      recipe: {
-        rtitle: inputRecipeTitle.value,
-        ingredients: Array.from(inputIngredients).map((inp) => inp.value),
-        toppings: Array.from(inputToppings).map((inp) => inp.value),
-        instructions: inputInstructions.value,
-      },
-    }; 
-    uploadPost(newPost);
+  console.log(validateData());
+  if (!validateData()) return;
+  const newPost = {
+    id: generateUniqueId(),
+    title: inputTitle.value,
+    category: selectCategory.value,
+    description: inputShortDescription.value,
+    imageUrl: inputImgUrl.value,
+    content: inputContent.value,
+    date: inputDate.value !== "" ? inputDate.value : date,
+    images: Array.from(inputImages).map((inp) => inp.value),
+    recipe: {
+      rtitle: inputRecipeTitle.value,
+      ingredients: Array.from(inputIngredients).map((inp) => inp.value),
+      toppings: Array.from(inputToppings).map((inp) => inp.value),
+      instructions: inputInstructions.value,
+    }
   }
-};
+  uploadPost(newPost);
+}
+
 
 
 //Events
 
-
+console.log(btnAddTopping);
 
 [btnAddIngredient, btnAddTopping].forEach(btn => btn.addEventListener('click', addInput));
 

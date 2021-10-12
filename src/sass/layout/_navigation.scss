@@ -24,7 +24,8 @@
     text-decoration: none;
     color: $color-text-light;
   }
-  &__link:hover {
+  &__link:hover,
+  &__link:active {
     color: $color-text-dark;
 
     &::after{
@@ -38,11 +39,6 @@
         background-color: $color-primary;
        
     }
-  }
-
-  &__link--active {
-    border-bottom: 3px solid $color-primary;
-    transition: border-bottom 0.2s;
   }
   &__logo {
     width: auto;

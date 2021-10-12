@@ -65,6 +65,7 @@
                <div class="new-post__field">
                   <label for="title" class="new-post__field--label label-title">Post Title</label>
                   <input type="text" class="new-post__field--input input-title" maxlength="100" placeholder="Title" required>
+                  <div class="error-message-title"></div>
                </div>
                <div class="new-post__field">
                   <label for="title" class="new-post__field--label label-category">Category</label>
@@ -88,6 +89,7 @@
                <div class="new-post__field">
                   <label for="desc" class="new-post__field--label label-imgUrl">Image Url</label>
                   <input type="url" name="desc" class="new-post__field--input input-imgUrl" pattern="https://.*" placeholder="https://example.com"  required>
+                  <div class="error-message-image"></div>
                </div>
                <div class="new-post__field">
                   <label for="content" class="new-post__field--label">Content</label>
@@ -119,7 +121,7 @@
                   </label>
                   <div class="ingredients-container">
                      <div class="new-post__input-container" id="ing-0">
-                        <input type="text" name="ingredients" class="new-post__field--input multiple input-ingredients" maxlength="100" placeholder="Ingredient" required>
+                        <input type="text" name="ingredients" class="new-post__field--input multiple input-ingredients" maxlength="100" placeholder="Ingredient">
                         <button class="new-post__field--delete-btn   delete-btn-input">
                            <ion-icon id="delete-ingredient-input" name="close-outline" class="new-post__field--close-icon "></ion-icon>
                         </button>
@@ -127,7 +129,7 @@
                      <div class="new-post__input-container"
                      id="ing-1">
                         <input type="text" name="ingredients" class="new-post__field--input multiple input-ingredients" maxlength="100"
-                           placeholder="Ingredient" required>
+                           placeholder="Ingredient">
                      
                         <button class="new-post__field--delete-btn   delete-btn-input">
                            <ion-icon id="delete-ingredient-input" name="close-outline" class="new-post__field--close-icon "></ion-icon>

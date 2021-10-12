@@ -1,7 +1,7 @@
 "use strict";
 
 let btnMore;
-// const cardImage = document.querySelector(".post__img");
+const cardImage = document.querySelector(".post__img");
 // const postsContainer = document.querySelector("#posts-container");
 // const paginationContainer = document.querySelector(".pagination");
 // const scrollToPagination = document.querySelector('.section-intro');
@@ -10,6 +10,7 @@ var allPosts =[];
 const postsPerPage = 9;
 let curPage = 1;
 let postsNum;
+const pages = Array.from(document.querySelectorAll('.pagination__number'));
 
 const mainSection = document.getElementById('home-page');
 
@@ -35,7 +36,7 @@ paginationContainer.classList.add('pagination');
 paginationContainer.innerHTML = `<button  class="pagination__btn btn-prev">
                <ion-icon id="prev" name="chevron-back-outline" class="pagination__icon"></ion-icon>
             </button>
-            <button class="pagination__number" id="1">1</button>
+            <button class="pagination__number active" id="1">1</button>
             <button class="pagination__number" id="2">2</button>
             <button class="pagination__number" id="3">3</button>
 
@@ -109,14 +110,14 @@ const getData = async function () {
   data.forEach(post => generateCardMarkup(post)) 
 };
 
-// const getPostsPerPage = function (posts, page = 1) {
-//   const start = [page - 1] * postsPerPage; // 0;
-//   const end = page * postsPerPage; // 9;
-//   console.log(start, end);
-//   console.log(posts[8]);
-//   let pagePosts = posts.slice(0, 9);
-//   console.log(pagePosts);
-// };
+const getPostsPerPage = function (posts, page = 1) {
+  const start = [page - 1] * postsPerPage; // 0;
+  const end = page * postsPerPage; // 9;
+  console.log(start, end);
+  console.log(posts[8]);
+  let pagePosts = posts.slice(0, 9);
+  console.log(pagePosts);
+};
 
 
 
@@ -159,7 +160,11 @@ paginationContainer.addEventListener("click", (e) => {
   } else {
     curPage = e.target.id;
     getData();
-    scrollToPagination.scrollIntoView();
+    // e.target.siblings.classlist.remove('active')
+    e.target.classList.contains('active') ? e.target.classList.remove('active') : e.target.classList.add('active')
+    
+    introSection.scrollIntoView();
 
   }
 });
+console.log(pages);

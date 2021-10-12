@@ -152,6 +152,17 @@ body {
   bottom: 1px;
 }
 
+.error-message-title,
+.error-message-image {
+  display: none;
+  color: red;
+  font-size: 1.4rem;
+}
+
+.error-active {
+  display: block;
+}
+
 .post,
 .recipe {
   display: -webkit-box;
@@ -290,6 +301,12 @@ body {
           box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.02);
 }
 
+.active {
+  background-color: #c08267;
+  color: #f5f1ef;
+  padding: 1rem;
+}
+
 .promo {
   max-width: 130rem;
   display: -webkit-box;
@@ -371,11 +388,11 @@ body {
   color: #616063;
 }
 
-.navigation__link:hover {
+.navigation__link:hover, .navigation__link:active {
   color: #212123;
 }
 
-.navigation__link:hover::after {
+.navigation__link:hover::after, .navigation__link:active::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -385,12 +402,6 @@ body {
   width: 50%;
   height: 0.2rem;
   background-color: #a0583c;
-}
-
-.navigation__link--active {
-  border-bottom: 3px solid #a0583c;
-  -webkit-transition: border-bottom 0.2s;
-  transition: border-bottom 0.2s;
 }
 
 .navigation__logo {
@@ -769,15 +780,6 @@ body {
   outline: none;
 }
 
-.new-post__field > *:required:invalid {
-  border-bottom: 1px solid red;
-}
-
-.new-post__field > *:required:invalid::after {
-  content: 'Please enter valid data';
-  color: red;
-}
-
 .new-post__field--label {
   margin-bottom: 1rem;
   font-weight: 500;
@@ -805,7 +807,7 @@ body {
 }
 
 .new-post__field--btn {
-  color: #212123;
+  color: #f5f1ef;
   text-decoration: none;
   font-size: 1.4rem;
   width: 15rem;
